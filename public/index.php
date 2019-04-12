@@ -7,6 +7,7 @@ $global_uid = 0;
 // 当客户端连上来时分配uid，并保存连接，并通知所有客户端
 function handle_connection($connection)
 {
+    echo 'someone come in';
     global $text_worker, $global_uid;
     // 为这个连接分配一个uid
     $connection->uid = ++$global_uid;
@@ -14,7 +15,8 @@ function handle_connection($connection)
 
 // 当客户端发送消息过来时，转发给所有人
 function handle_message($connection, $data)
-{
+{   
+    echo "woker_name:{$text_worker->name}-user[{$connection->uid}] said: $data"."[".$recode."]";
     global $text_worker,$recode;
     if(!isset($recode)){
     		$recode=0;
@@ -43,7 +45,7 @@ function start_fun($woker)
  $woker->name=$woker->id.'-test';
 }$recode=0;
 // 创建一个文本协议的Worker监听2347接口
-$text_worker = new Worker("text://0.0.0.0:2347");
+$text_worker = new Worker("websocket://0.0.0.0:2347");
 
 // 只启动1个进程，这样方便客户端之间传输数据
 $text_worker->count = 1;
