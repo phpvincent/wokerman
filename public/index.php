@@ -16,8 +16,9 @@ function handle_connection($connection)
 // 当客户端发送消息过来时，转发给所有人
 function handle_message($connection, $data)
 {   
+   
+    global $text_worker,$recode; 
     echo "woker_name:{$text_worker->name}-user[{$connection->uid}] said: $data"."[".$recode."]";
-    global $text_worker,$recode;
     if(!isset($recode)){
     		$recode=0;
     	}else{
