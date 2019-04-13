@@ -11,7 +11,8 @@ require_once './Workerman/Autoloader.php';
     {
         $redis=new \Redis();
          $redis->connect('18.188.167.252', 6379);
-         var_dump($redis);
+         $redis->set('aa',1);
+         var_dump($redis->get('aa'));
         // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
         $inner_text_worker = new Worker('Text://0.0.0.0:5678');
         //设置 redis 字符串数据
