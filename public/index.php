@@ -3,6 +3,10 @@ use Workerman\Worker;
 require_once './Workerman/Autoloader.php';
     // 初始化一个worker容器，监听1234端口
     global $worker;
+    $redis=new \Redis();
+         $redis->connect('0.0.0.0', 6379);
+         $redis->set('aa',1);
+         var_dump($redis->get('aa'));
     Worker::$stdoutFile = '/tmp/stdout.log';
     $worker = new Worker('websocket://0.0.0.0:1234');
     // 这里进程数必须设置为1
