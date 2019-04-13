@@ -8,6 +8,7 @@ require_once './Workerman/Autoloader.php';
          $redis->set('aa',1);
          var_dump($redis->get('aa'));
     Worker::$stdoutFile = '/tmp/'.date('YYYY_mm_dd').'stdout.log';
+    echo '/tmp/'.date('YYYY_mm_dd').'stdout.log';
     $worker = new Worker('websocket://0.0.0.0:1234');
     // 这里进程数必须设置为1
     $worker->count = 1;
