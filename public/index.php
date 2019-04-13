@@ -1,58 +1,86 @@
 <?php
 use Workerman\Worker;
 require_once './Workerman/Autoloader.php';
-
-$global_uid = 0;
-
-// 当客户端连上来时分配uid，并保存连接，并通知所有客户端
-function handle_connection($connection)
-{
-    echo 'someone come in';
-    global $text_worker, $global_uid;
-    // 为这个连接分配一个uid
-    $connection->uid = ++$global_uid;
-}
-
-// 当客户端发送消息过来时，转发给所有人
-function handle_message($connection, $data)
-{   
-   
-    global $text_worker,$recode; 
-    echo "woker_name:{$text_worker->name}-user[{$connection->uid}] said: $data"."[".$recode."]";
-    if(!isset($recode)){
-    		$recode=0;
-    	}else{
-    		$recode+=1;
-    	}
-    foreach($text_worker->connections as $conn)
+    // 初始化一个worker容器，监听1234端口
+    global $worker;
+    $worker = new Worker('websocket://0.0.0.0:1234');
+    // 这里进程数必须设置为1
+    $worker->count = 1;
+    // worker进程启动后建立一个内部通讯端口
+    $worker->onWorkerStart = function($worker)
     {
-    	
-        $conn->send("woker_name:{$text_worker->name}-user[{$connection->uid}] said: $data"."[".$recode."]");
-    }
-}
-
-// 当客户端断开时，广播给所有客户端
-function handle_close($connection)
-{
-    global $text_worker;
-    foreach($text_worker->connections as $conn)
+        $redis=new \Redis();
+         $redis->connect('18.188.167.252', 6379);
+        // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
+        $inner_text_worker = new Worker('Text://0.0.0.0:5678');
+        //设置 redis 字符串数据
+       $redis->set("tutorial-name", "Redis tutorial");
+       // 获取存储的数据并输出
+       echo "Stored string in redis:: " . $redis->get("tutorial-name");
+        $inner_text_worker->onMessage = function($connection, $buffer)
+        {
+            global $worker;
+            // $data数组格式，里面有uid，表示向那个uid的页面推送数据
+            $data = json_decode($buffer, true);
+            $uid = $data['uid'];
+            // 通过workerman，向uid的页面推送数据
+            $ret = sendMessageByUid($uid, $buffer);
+            // 返回推送结果
+            $connection->send($ret ? 'ok' : 'fail');
+        };
+        $inner_text_worker->listen();
+    };
+    // 新增加一个属性，用来保存uid到connection的映射
+    $worker->uidConnections = array();
+    // 当有客户端发来消息时执行的回调函数
+    $worker->onMessage = function($connection, $data)use($worker)
     {
-        $conn->send("user[{$connection->uid}] logout");
+        // 判断当前客户端是否已经验证,既是否设置了uid
+        if(!isset($connection->uid))
+        {
+           // 没验证的话把第一个包当做uid（这里为了方便演示，没做真正的验证）
+           $connection->uid = $data;
+           /* 保存uid到connection的映射，这样可以方便的通过uid查找connection，
+            * 实现针对特定uid推送数据
+            */
+           $worker->uidConnections[$connection->uid] = $connection;
+           return;
+        }
+    };
+    
+    // 当有客户端连接断开时
+    $worker->onClose = function($connection)use($worker)
+    {
+        global $worker;
+        if(isset($connection->uid))
+        {
+            // 连接断开时删除映射
+            unset($worker->uidConnections[$connection->uid]);
+        }
+    };
+
+    // 向所有验证的用户推送数据
+    function broadcast($message)
+    {
+       global $worker;
+       foreach($worker->uidConnections as $connection)
+       {
+            $connection->send($message);
+       }
     }
-}
-//start function
-function start_fun($woker)
-{
- $woker->name=$woker->id.'-test';
-}$recode=0;
-// 创建一个文本协议的Worker监听2347接口
-$text_worker = new Worker("websocket://0.0.0.0:2347");
-
-// 只启动1个进程，这样方便客户端之间传输数据
-$text_worker->count = 1;
-$text_worker->onWorkerStart ='start_fun';
-$text_worker->onConnect = 'handle_connection';
-$text_worker->onMessage = 'handle_message';
-$text_worker->onClose = 'handle_close';
-
-Worker::runAll();
+    
+    // 针对uid推送数据
+    function sendMessageByUid($uid, $message)
+    {
+        global $worker;
+        if(isset($worker->uidConnections[$uid]))
+        {
+            $connection = $worker->uidConnections[$uid];
+            $connection->send($message);
+            return true;
+        }
+        return false;
+    }
+    
+    // 运行所有的worker（其实当前只定义了一个）
+    Worker::runAll();

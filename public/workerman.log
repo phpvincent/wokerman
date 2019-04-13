@@ -1541,3 +1541,13 @@ Stack trace:
 2019-04-12 08:07:54 pid:2277 Workerman[index.php] start in DEBUG mode
 2019-04-12 08:08:07 pid:2277 Workerman[index.php] stopping ...
 2019-04-12 08:08:07 pid:2277 Workerman[index.php] has been stopped
+2019-04-13 08:30:48 pid:1 Error: Class 'Redis' not found in C:\Users\Administrator\Desktop\homesteadcode\public\index.php:12
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 C:\Users\Administrator\Desktop\homesteadcode\public\Workerman\Worker.php(2342): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 C:\Users\Administrator\Desktop\homesteadcode\public\Workerman\Worker.php(1351): Workerman\Worker->run()
+#3 C:\Users\Administrator\Desktop\homesteadcode\public\Workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#4 C:\Users\Administrator\Desktop\homesteadcode\public\Workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#5 C:\Users\Administrator\Desktop\homesteadcode\public\index.php(82): Workerman\Worker::runAll()
+#6 {main}
+2019-04-13 08:30:49 pid:1 Worker process terminated
