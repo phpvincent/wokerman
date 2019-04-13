@@ -3,6 +3,7 @@ use Workerman\Worker;
 require_once './Workerman/Autoloader.php';
     // 初始化一个worker容器，监听1234端口
     global $worker;
+    Worker::$stdoutFile = '/tmp/stdout.log';
     $worker = new Worker('websocket://0.0.0.0:1234');
     // 这里进程数必须设置为1
     $worker->count = 1;
@@ -10,7 +11,7 @@ require_once './Workerman/Autoloader.php';
     $worker->onWorkerStart = function($worker)
     {
         $redis=new \Redis();
-         $redis->connect('18.188.167.252', 6379);
+         $redis->connect('0.0.0.0', 6379);
          $redis->set('aa',1);
          var_dump($redis->get('aa'));
         // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
