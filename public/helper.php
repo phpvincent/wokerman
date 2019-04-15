@@ -67,13 +67,13 @@
 	    		$redis->hdel('routes',$route_msg['route']);
 	    	}
 	    	$ips=explode(',', $redis->hget('routes_ips',$route_msg['route']));
-	    	unset($ips[array_search($route_msg['ip'],$ips)]);
+	    	unset($ips[array_search($connection->msg['ip'],$ips)]);
 	    	if($ips!=null){
 	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
-	    	$redis->hdel('route_ip_msg',$route_msg['ip']);
+	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg);
 	    }
 	}
