@@ -14,5 +14,6 @@ require_once './helper.php';
     $route_worker->onWorkerStart='route_on_start';
     $route_worker->onConnect='route_on_connect';
     $route_worker->onMessage='route_on_message';
+    $route_worker->onClose='route_on_close';
     // 运行所有的worker（其实当前只定义了一个）
     Worker::runAll();
