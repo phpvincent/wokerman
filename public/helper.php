@@ -43,7 +43,7 @@
 	        			$ips[]=$connection->msg['ip'];
 	        		}
 	        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
-	        		$redis->hset('routes_ips',$route,json_encode($ips));
+	        		$redis->hset('routes_ips',$route,implode(',', $ips));
 	        	}	        	
 	        }
 	        $ip_info=$data['ip_info'];
