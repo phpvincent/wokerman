@@ -75,7 +75,7 @@
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
 	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
-	    	echo 'del'.json_encode($route_msg);
+	    	echo 'del'.json_encode($route_msg).'/n';
 	    }
 	}
 	/**

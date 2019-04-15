@@ -4,7 +4,7 @@ require_once './Workerman/Autoloader.php';
 require_once './helper.php';
     // 初始化一个worker容器，监听1234端口
     global $worker;
-    Worker::$stdoutFile = '/tmp/'.date('Y_m_d').'stdout.log';
+    Worker::$stdoutFile = '/tmp/stdout.log';
     $route_worker = new Worker('websocket://0.0.0.0:2349');
     // 这里进程数必须设置为1
     $route_worker->count = 1;
