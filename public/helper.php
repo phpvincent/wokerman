@@ -30,7 +30,7 @@
 	    		return;
 	    	}
 	        $route=$data['route'];
-	        $connection->msg['route']=$route;var_dump($redis->hget('routes',$route);
+	        $connection->msg['route']=$route;var_dump($redis->hget('routes',$route));
 	        if($redis->hget('routes',$route)==null){
 	        	$redis->hset('routes',$route,1);
 	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
