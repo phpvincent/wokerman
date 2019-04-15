@@ -16,19 +16,19 @@ require_once './Workerman/Autoloader.php';
         $innet_woker1->reusePort=true;
         $innet_woker->onMessage(function($con,$buffet){
             //...
-        })
+        });
         $innet_woker1->listen();
         $workers[2]=$innet_woker2=new woker('websocket://0.0.0.0:2350');
          $innet_woker2->reusePort=true;
         $innet_woker->onMessage(function($con,$buffet){
             //...
-        })
+        });
         $innet_woker2->listen();
         $workers[3]=$innet_woker3=new woker('websocket://0.0.0.0:2350');
          $innet_woker3->reusePort=true;
         $innet_woker->onMessage(function($con,$buffet){
             //...
-        })
+        });
         $innet_woker3->listen();
     };
     // 新增加一个属性，用来保存uid到connection的映射
