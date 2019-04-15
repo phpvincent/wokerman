@@ -14,21 +14,21 @@ require_once './Workerman/Autoloader.php';
         global $workers;
         $workers[1]=$innet_woker1=new Worker('websocket://0.0.0.0:2350');
         $innet_woker1->reusePort=true;
-        $innet_woker1->onMessage(function($con,$buffet){
-            //...
-        });
+        $innet_woker1->onMessage ='on_message';
+        
+        
         $innet_woker1->listen();
         $workers[2]=$innet_woker2=new Worker('websocket://0.0.0.0:2350');
          $innet_woker2->reusePort=true;
-        $innet_woker2->onMessage(function($con,$buffet){
-            //...
-        });
+        $innet_woker2->onMessage='on_message';
+        
+        
         $innet_woker2->listen();
         $workers[3]=$innet_woker3=new Worker('websocket://0.0.0.0:2350');
          $innet_woker3->reusePort=true;
-        $innet_woker3->onMessage(function($con,$buffet){
-            //...
-        });
+        $innet_woker3->onMessage='on_message';
+        
+        
         $innet_woker3->listen();
     };
     // 新增加一个属性，用来保存uid到connection的映射
@@ -43,7 +43,10 @@ require_once './Workerman/Autoloader.php';
     {
         
     };
-
+function on_message($connection, $data)
+{
+    $connection->send("hello\n");
+}
     // 向所有验证的用户推送数据
     function broadcast($message)
     {
