@@ -22,8 +22,9 @@
 	}
     if (!function_exists("route_on_message")) {
 	 	function route_on_message($connection,$data)
-	    {	$data=json_decode($data,true);
-	    	
+	    {	
+	    	global $redis;
+	    	$data=json_decode($data,true);
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
 	    		$connection->send(ws_return('route or ip_info not found',1));
 	    		return;
@@ -50,6 +51,7 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
+	    	global $redis;
 	    	$route_msg=$connection->msg;
 	    	$redis->hSet('routes',$route_msg['route'],$redis->hGet('routes',$route_msg['route'])-1);
 	    	$ips=explode(',', $redis->hGet('routes_ips',$route_msg['route']));
