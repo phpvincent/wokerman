@@ -23,7 +23,7 @@
     if (!function_exists("route_on_message")) {
 	 	function route_on_message($connection,$data)
 	    {	$data=json_decode($data,true);
-	    	var_dump($data);
+	    	
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
 	    		$connection->send(ws_return('route or ip_info not found',1));
 	    		return;
