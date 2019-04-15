@@ -42,7 +42,7 @@ Class Base
         } else {
             $this->handler->connect($this->options['host'], $this->options['port'], $this->options['timeout']);
         }
-        dump($this->handler);
+        printf($this->handler);
         if ('' != $this->options['password']) {
             $this->handler->auth($this->options['password']);
         }
