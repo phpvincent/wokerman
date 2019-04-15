@@ -34,8 +34,13 @@ require_once './Workerman/Autoloader.php';
     // 新增加一个属性，用来保存uid到connection的映射
     $worker->uidConnections = array();
     // 当有客户端发来消息时执行的回调函数
-    $worker->onMessage = function($connection, $data)use($worker)
+    $worker->onMessage = function($connection, $data)use($worker,$wokers)
     {
+        foreach($wokers as $k => $v){
+        foreach($v->connections as $key => $val){
+                $val->send($data);
+            }
+        }
     };
     
     // 当有客户端连接断开时
@@ -43,9 +48,13 @@ require_once './Workerman/Autoloader.php';
     {
         
     };
-function on_message($connection, $data)
-{
-    $connection->send("hello\n");
+function on_message($connection, $data)use($wokers)
+{   foreach($wokers as $k => $v){
+        foreach($v->connections as $key => $val){
+            $val->send($data);
+        }
+    }
+    $connection->send("resend\n");
 }
     // 向所有验证的用户推送数据
     function broadcast($message)
