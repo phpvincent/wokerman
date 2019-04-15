@@ -58,6 +58,7 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
+	    	var_dump($connection->getRemoteIp());
 	    	global $redis;
 	    	$route_msg=$connection->msg;
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
