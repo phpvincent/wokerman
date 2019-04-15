@@ -31,19 +31,19 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        if($redis->hGet('routes',$route)==null){
-	        	$redis->hSet('routes',$route,1);
-	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
+	        if($redis->hget('routes',$route)==null){
+	        	$redis->hset('routes',$route,1);
+	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        }else{
-	        	$ips=explode(',', $redis->hGet('routes_ips',$route));
+	        	$ips=explode(',', $redis->hget('routes_ips',$route));
 	        	if(!in_array($connection->msg['ip'], $ips)){
 	        		$ips[]=$connection->msg['ip'];
-	        		$redis->hSet('routes',$route,$redis->hGet('routes',$route)+1);
-	        		$redis->hSet('routes_ips',$route,json_encode($ips));
+	        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
+	        		$redis->hset('routes_ips',$route,json_encode($ips));
 	        	}	        	
 	        }
 	        $ip_info=$data['ip_info'];
-	        $redis->hSet('route_ip_msg',$connection->msg['ip'],$ip_info);
+	        $redis->hset('route_ip_msg',$connection->msg['ip'],$ip_info);
 	        $connection->send( ws_return('connect_success',0));
 	        return;
 	    }
@@ -53,11 +53,11 @@
 	    {
 	    	global $redis;
 	    	$route_msg=$connection->msg;
-	    	$redis->hSet('routes',$route_msg['route'],$redis->hGet('routes',$route_msg['route'])-1);
-	    	$ips=explode(',', $redis->hGet('routes_ips',$route_msg['route']));
+	    	$redis->hset('routes',$route_msg['route'],$redis->hget('routes',$route_msg['route'])-1);
+	    	$ips=explode(',', $redis->hget('routes_ips',$route_msg['route']));
 	    	unset($ips[array_search($route_msg['ip'],$ips)]);
-	    	$redis->hSet('routes_ips',$route_msg['route'],$ips);
-	    	$redis->hDel('route_ip_msg',$route_msg['ip']);
+	    	$redis->hset('routes_ips',$route_msg['route'],$ips);
+	    	$redis->hdel('route_ip_msg',$route_msg['ip']);
 	    	echo 'del'.json_encode($route_msg);
 	    }
 	}
