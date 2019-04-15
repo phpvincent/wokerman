@@ -30,8 +30,8 @@
 	    		return;
 	    	}
 	        $route=$data['route'];
-	        $connection->msg['route']=$route;var_dump($redis->hget('routes',$route));
-	        if($redis->hget('routes',$route)==null){
+	        $connection->msg['route']=$route;
+	        if($redis->hget('routes',$route)==null||$redis->hget('routes',$route)==false){
 	        	$redis->hset('routes',$route,1);
 	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        }else{
@@ -58,10 +58,19 @@
 	    {
 	    	global $redis;
 	    	$route_msg=$connection->msg;
-	    	$redis->hset('routes',$route_msg['route'],$redis->hget('routes',$route_msg['route'])-1);
+	    	$route_num=$redis->hget('routes',$route_msg['route']);
+	    	if($route_num>0){
+	    		$redis->hset('routes',$route_msg['route'],$route_num-1);
+	    	}else{
+	    		$redis->hdel('routes',$route_msg['route']);
+	    	}
 	    	$ips=explode(',', $redis->hget('routes_ips',$route_msg['route']));
 	    	unset($ips[array_search($route_msg['ip'],$ips)]);
-	    	$redis->hset('routes_ips',$route_msg['route'],$ips);
+	    	if($ips!=null){
+	    		$redis->hset('routes_ips',$route_msg['route'],$ips);
+	    	}else{
+	    		$redis->hdel('routes_ips',$route_msg['route']);
+	    	}
 	    	$redis->hdel('route_ip_msg',$route_msg['ip']);
 	    	echo 'del'.json_encode($route_msg);
 	    }
