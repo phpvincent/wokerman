@@ -69,7 +69,7 @@
 	    	$ips=explode(',', $redis->hget('routes_ips',$route_msg['route']));
 	    	unset($ips[array_search($route_msg['ip'],$ips)]);
 	    	if($ips!=null){
-	    		$redis->hset('routes_ips',$route_msg['route'],$ips);
+	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
