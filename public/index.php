@@ -14,19 +14,19 @@ require_once './Workerman/Autoloader.php';
         global $workers;
         $workers[1]=$innet_woker1=new Worker('websocket://0.0.0.0:2350');
         $innet_woker1->reusePort=true;
-        $innet_woker->onMessage(function($con,$buffet){
+        $innet_woker1->onMessage(function($con,$buffet){
             //...
         });
         $innet_woker1->listen();
         $workers[2]=$innet_woker2=new Worker('websocket://0.0.0.0:2350');
          $innet_woker2->reusePort=true;
-        $innet_woker->onMessage(function($con,$buffet){
+        $innet_woker2->onMessage(function($con,$buffet){
             //...
         });
         $innet_woker2->listen();
         $workers[3]=$innet_woker3=new Worker('websocket://0.0.0.0:2350');
          $innet_woker3->reusePort=true;
-        $innet_woker->onMessage(function($con,$buffet){
+        $innet_woker3->onMessage(function($con,$buffet){
             //...
         });
         $innet_woker3->listen();
