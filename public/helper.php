@@ -6,7 +6,6 @@
 	    	global $redis;
 	    	$redis=new \Redis(); 
 	    	$redis->connect('13.250.109.37',6379);
-	    	var_dump($redis);
 	    }
 	}
 	if (!function_exists("route_on_connect")) {
