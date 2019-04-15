@@ -36,7 +36,7 @@
 	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        }else{
 	        	$ips=explode(',', $redis->hget('routes_ips',$route));
-	        	if(!in_array($connection->msg['ip'], $ips)){//var_dump($connection->msg['ip'],$ips);
+	        	if(!in_array($connection->msg['ip'], $ips)){var_dump($connection->msg['ip'],$ips);
 	        		if($ips==null){
 	        			$ips=[];
 	        			$ips[]=$connection->msg['ip'];
