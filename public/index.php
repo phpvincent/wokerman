@@ -1,55 +1,83 @@
 <?php
 use Workerman\Worker;
 require_once './Workerman/Autoloader.php';
-
-$global_uid = 0;
-
-// 当客户端连上来时分配uid，并保存连接，并通知所有客户端
-function handle_connection($connection)
-{
-    global $text_worker, $global_uid;
-    // 为这个连接分配一个uid
-    $connection->uid = ++$global_uid;
-}
-
-// 当客户端发送消息过来时，转发给所有人
-function handle_message($connection, $data)
-{
-    global $text_worker,$recode;
-    if(!isset($recode)){
-    		$recode=0;
-    	}else{
-    		$recode+=1;
-    	}
-    foreach($text_worker->connections as $conn)
+    // 初始化一个worker容器，监听1234端口
+    global $worker;
+    Worker::$stdoutFile = '/tmp/'.date('Y_m_d').'stdout.log';
+    $worker = new Worker('text://0.0.0.0:2349');
+    // 这里进程数必须设置为1
+    $worker->count = 1;
+    $workers=[];
+    // worker进程启动后建立一个内部通讯端口
+    $worker->onWorkerStart = function($worker)
     {
-    	
-        $conn->send("woker_name:{$text_worker->name}-user[{$connection->uid}] said: $data"."[".$recode."]");
-    }
-}
-
-// 当客户端断开时，广播给所有客户端
-function handle_close($connection)
-{
-    global $text_worker;
-    foreach($text_worker->connections as $conn)
+        global $workers;
+        $workers[1]=$innet_woker1=new Worker('websocket://0.0.0.0:2350');
+        $innet_woker1->reusePort=true;
+        $innet_woker1->onMessage ='on_message';
+        
+        
+        $innet_woker1->listen();
+        $workers[2]=$innet_woker2=new Worker('websocket://0.0.0.0:2350');
+         $innet_woker2->reusePort=true;
+        $innet_woker2->onMessage='on_message';
+        
+        
+        $innet_woker2->listen();
+        $workers[3]=$innet_woker3=new Worker('websocket://0.0.0.0:2350');
+         $innet_woker3->reusePort=true;
+        $innet_woker3->onMessage='on_message';
+        
+        
+        $innet_woker3->listen();
+    };
+    // 新增加一个属性，用来保存uid到connection的映射
+    $worker->uidConnections = array();
+    // 当有客户端发来消息时执行的回调函数
+    $worker->onMessage = function($connection, $data)use($worker,$wokers)
     {
-        $conn->send("user[{$connection->uid}] logout");
+        foreach($wokers as $k => $v){
+        foreach($v->connections as $key => $val){
+                $val->send($data);
+            }
+        }
+    };
+    
+    // 当有客户端连接断开时
+    $worker->onClose = function($connection)use($worker)
+    {
+        
+    };
+function on_message($connection, $data)use($wokers)
+{   foreach($wokers as $k => $v){
+        foreach($v->connections as $key => $val){
+            $val->send($data);
+        }
     }
+    $connection->send("resend\n");
 }
-//start function
-function start_fun($woker)
-{
- $woker->name=$woker->id.'-test';
-}$recode=0;
-// 创建一个文本协议的Worker监听2347接口
-$text_worker = new Worker("text://0.0.0.0:2347");
-
-// 只启动1个进程，这样方便客户端之间传输数据
-$text_worker->count = 1;
-$text_worker->onWorkerStart ='start_fun';
-$text_worker->onConnect = 'handle_connection';
-$text_worker->onMessage = 'handle_message';
-$text_worker->onClose = 'handle_close';
-
-Worker::runAll();
+    // 向所有验证的用户推送数据
+    function broadcast($message)
+    {
+       global $worker;
+       foreach($worker->uidConnections as $connection)
+       {
+            $connection->send($message);
+       }
+    }
+    
+    // 针对uid推送数据
+    function sendMessageByUid($uid, $message)
+    {
+        global $worker;
+        if(isset($worker->uidConnections[$uid]))
+        {
+            $connection = $worker->uidConnections[$uid];
+            $connection->send($message);
+            return true;
+        }
+        return false;
+    }
+    
+    // 运行所有的worker（其实当前只定义了一个）
+    Worker::runAll();
