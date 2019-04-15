@@ -17,7 +17,7 @@
 	        global $route_connections;
 	        $connection->msg=['ip'=>$ip];
 	        $route_connections[$ip]=$connection;
-	        echo 'ip:'.$ip;
+	        echo 'ip:'.$ip.'/n';
 	    }
 	}
     if (!function_exists("route_on_message")) {
@@ -30,13 +30,13 @@
 	    		return;
 	    	}
 	        $route=$data['route'];
-	        $connection->msg['route']=$route;
+	        $connection->msg['route']=$route;var_dump($redis->hget('routes',$route);
 	        if($redis->hget('routes',$route)==null){
 	        	$redis->hset('routes',$route,1);
 	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        }else{
 	        	$ips=explode(',', $redis->hget('routes_ips',$route));
-	        	if(!in_array($connection->msg['ip'], $ips)){var_dump($connection->msg['ip'],$ips);
+	        	if(!in_array($connection->msg['ip'], $ips)){//var_dump($connection->msg['ip'],$ips);
 	        		if($ips==null){
 	        			$ips=[];
 	        			$ips[]=$connection->msg['ip'];
