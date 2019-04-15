@@ -1,0 +1,2011 @@
+2019-04-15 04:38:30 pid:2190 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:42:24 pid:2190 Workerman[index.php] stopping ...
+2019-04-15 04:42:24 pid:2190 Workerman[index.php] has been stopped
+2019-04-15 04:42:25 pid:2322 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:43:40 pid:2322 Workerman[index.php] stopping ...
+2019-04-15 04:43:40 pid:2322 Workerman[index.php] has been stopped
+2019-04-15 04:44:08 pid:2375 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:44:37 pid:2375 Workerman[index.php] stopping ...
+2019-04-15 04:44:37 pid:2375 Workerman[index.php] has been stopped
+2019-04-15 04:44:38 pid:2395 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:48:39 pid:2395 Workerman[index.php] stopping ...
+2019-04-15 04:48:39 pid:2395 Workerman[index.php] has been stopped
+2019-04-15 04:48:42 pid:2406 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:51:16 pid:2406 Workerman[index.php] stopping ...
+2019-04-15 04:51:16 pid:2406 Workerman[index.php] has been stopped
+2019-04-15 04:51:17 pid:2412 Workerman[index.php] start in DEBUG mode
+2019-04-15 04:54:01 pid:2412 Workerman[index.php] stopping ...
+2019-04-15 04:54:01 pid:2412 Workerman[index.php] has been stopped
+2019-04-15 04:54:02 pid:2417 Workerman[index.php] start in DEBUG mode
+2019-04-15 06:08:54 pid:2417 Workerman[index.php] stopping ...
+2019-04-15 06:08:54 pid:2417 Workerman[index.php] has been stopped
+2019-04-15 06:23:41 pid:2160 Workerman[index.php] status 
+2019-04-15 06:23:41 pid:2160 Workerman[index.php] not run
+2019-04-15 06:23:46 pid:2163 Workerman[index.php] start in DEBUG mode
+2019-04-15 06:30:06 pid:2163 Workerman[index.php] stopping ...
+2019-04-15 06:30:06 pid:2163 Workerman[index.php] has been stopped
+2019-04-15 06:30:14 pid:2310 Workerman[index.php] start in DEBUG mode
+2019-04-15 06:30:16 pid:2310 Workerman[index.php] stopping ...
+2019-04-15 06:30:16 pid:2310 Workerman[index.php] has been stopped
+2019-04-15 06:30:24 pid:2312 Workerman[index.php] start in DEBUG mode
+2019-04-15 06:30:25 pid:2312 Workerman[index.php] stopping ...
+2019-04-15 06:30:25 pid:2312 Workerman[index.php] has been stopped
+2019-04-15 08:31:33 pid:3071 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:33:15 pid:3071 Workerman[index.php] stopping ...
+2019-04-15 08:33:15 pid:3071 Workerman[index.php] has been stopped
+2019-04-15 08:33:17 pid:3075 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:34:33 pid:3075 Workerman[index.php] stopping ...
+2019-04-15 08:34:33 pid:3075 Workerman[index.php] has been stopped
+2019-04-15 08:34:34 pid:3079 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:35:54 pid:3079 Workerman[index.php] stopping ...
+2019-04-15 08:35:54 pid:3079 Workerman[index.php] has been stopped
+2019-04-15 08:35:55 pid:3085 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:42:21 pid:3085 Workerman[index.php] stopping ...
+2019-04-15 08:42:21 pid:3085 Workerman[index.php] has been stopped
+2019-04-15 08:42:40 pid:3222 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:45:58 pid:3222 Workerman[index.php] stopping ...
+2019-04-15 08:45:58 pid:3222 Workerman[index.php] has been stopped
+2019-04-15 08:45:59 pid:3235 Workerman[index.php] start in DEBUG mode
+2019-04-15 08:51:08 pid:3235 Workerman[index.php] stopping ...
+2019-04-15 08:51:08 pid:3235 Workerman[index.php] has been stopped
+2019-04-15 08:51:09 pid:3244 Workerman[index.php] start in DEBUG mode
+2019-04-15 09:47:51 pid:3244 Workerman[index.php] stopping ...
+2019-04-15 09:47:51 pid:3244 Workerman[index.php] has been stopped
+2019-04-15 09:48:31 pid:3605 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:00:55 pid:3605 Workerman[index.php] stopping ...
+2019-04-15 10:00:55 pid:3605 Workerman[index.php] has been stopped
+2019-04-15 10:00:56 pid:3625 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:01:17 pid:3625 Workerman[index.php] stopping ...
+2019-04-15 10:01:17 pid:3625 Workerman[index.php] has been stopped
+2019-04-15 10:01:18 pid:3628 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:01:46 pid:3628 Workerman[index.php] stopping ...
+2019-04-15 10:01:46 pid:3628 Workerman[index.php] has been stopped
+2019-04-15 10:01:47 pid:3630 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:02:36 pid:3630 Workerman[index.php] stopping ...
+2019-04-15 10:02:36 pid:3630 Workerman[index.php] has been stopped
+2019-04-15 10:02:37 pid:3636 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:17:54 pid:3636 Workerman[index.php] stopping ...
+2019-04-15 10:17:54 pid:3636 Workerman[index.php] has been stopped
+2019-04-15 10:17:56 pid:3797 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:18:05 pid:3797 Workerman[index.php] stopping ...
+2019-04-15 10:18:05 pid:3797 Workerman[index.php] has been stopped
+2019-04-15 10:18:06 pid:3800 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:18:23 pid:3800 Workerman[index.php] stopping ...
+2019-04-15 10:18:23 pid:3800 Workerman[index.php] has been stopped
+2019-04-15 10:18:23 pid:3802 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:18:23 pid:3803 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#7 {main}
+2019-04-15 10:18:24 pid:3803 Worker[3803] process terminated
+2019-04-15 10:18:24 pid:3802 worker[none:3803] exit with status 64000
+2019-04-15 10:18:24 pid:3804 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:25 pid:3804 Worker[3804] process terminated
+2019-04-15 10:18:25 pid:3802 worker[none:3804] exit with status 64000
+2019-04-15 10:18:25 pid:3805 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:26 pid:3805 Worker[3805] process terminated
+2019-04-15 10:18:26 pid:3802 worker[none:3805] exit with status 64000
+2019-04-15 10:18:26 pid:3806 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:27 pid:3806 Worker[3806] process terminated
+2019-04-15 10:18:27 pid:3802 worker[none:3806] exit with status 64000
+2019-04-15 10:18:27 pid:3807 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:28 pid:3807 Worker[3807] process terminated
+2019-04-15 10:18:28 pid:3802 worker[none:3807] exit with status 64000
+2019-04-15 10:18:28 pid:3808 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:29 pid:3808 Worker[3808] process terminated
+2019-04-15 10:18:29 pid:3802 worker[none:3808] exit with status 64000
+2019-04-15 10:18:30 pid:3809 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:31 pid:3809 Worker[3809] process terminated
+2019-04-15 10:18:31 pid:3802 worker[none:3809] exit with status 64000
+2019-04-15 10:18:31 pid:3810 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:32 pid:3810 Worker[3810] process terminated
+2019-04-15 10:18:32 pid:3802 worker[none:3810] exit with status 64000
+2019-04-15 10:18:32 pid:3811 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:33 pid:3811 Worker[3811] process terminated
+2019-04-15 10:18:33 pid:3802 worker[none:3811] exit with status 64000
+2019-04-15 10:18:33 pid:3812 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:34 pid:3812 Worker[3812] process terminated
+2019-04-15 10:18:34 pid:3802 worker[none:3812] exit with status 64000
+2019-04-15 10:18:34 pid:3813 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:35 pid:3813 Worker[3813] process terminated
+2019-04-15 10:18:35 pid:3802 worker[none:3813] exit with status 64000
+2019-04-15 10:18:35 pid:3814 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:36 pid:3814 Worker[3814] process terminated
+2019-04-15 10:18:36 pid:3802 worker[none:3814] exit with status 64000
+2019-04-15 10:18:36 pid:3815 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:37 pid:3815 Worker[3815] process terminated
+2019-04-15 10:18:37 pid:3802 worker[none:3815] exit with status 64000
+2019-04-15 10:18:37 pid:3816 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:38 pid:3816 Worker[3816] process terminated
+2019-04-15 10:18:38 pid:3802 worker[none:3816] exit with status 64000
+2019-04-15 10:18:38 pid:3817 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:39 pid:3817 Worker[3817] process terminated
+2019-04-15 10:18:39 pid:3802 worker[none:3817] exit with status 64000
+2019-04-15 10:18:39 pid:3818 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:40 pid:3818 Worker[3818] process terminated
+2019-04-15 10:18:40 pid:3802 worker[none:3818] exit with status 64000
+2019-04-15 10:18:40 pid:3819 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:41 pid:3819 Worker[3819] process terminated
+2019-04-15 10:18:41 pid:3802 worker[none:3819] exit with status 64000
+2019-04-15 10:18:41 pid:3820 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:42 pid:3820 Worker[3820] process terminated
+2019-04-15 10:18:42 pid:3802 worker[none:3820] exit with status 64000
+2019-04-15 10:18:42 pid:3821 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:43 pid:3821 Worker[3821] process terminated
+2019-04-15 10:18:43 pid:3802 worker[none:3821] exit with status 64000
+2019-04-15 10:18:43 pid:3822 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:44 pid:3822 Worker[3822] process terminated
+2019-04-15 10:18:44 pid:3802 worker[none:3822] exit with status 64000
+2019-04-15 10:18:44 pid:3823 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:45 pid:3823 Worker[3823] process terminated
+2019-04-15 10:18:45 pid:3802 worker[none:3823] exit with status 64000
+2019-04-15 10:18:45 pid:3824 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:46 pid:3824 Worker[3824] process terminated
+2019-04-15 10:18:46 pid:3802 worker[none:3824] exit with status 64000
+2019-04-15 10:18:46 pid:3825 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:47 pid:3825 Worker[3825] process terminated
+2019-04-15 10:18:47 pid:3802 worker[none:3825] exit with status 64000
+2019-04-15 10:18:47 pid:3826 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:48 pid:3826 Worker[3826] process terminated
+2019-04-15 10:18:48 pid:3802 worker[none:3826] exit with status 64000
+2019-04-15 10:18:48 pid:3827 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:49 pid:3827 Worker[3827] process terminated
+2019-04-15 10:18:49 pid:3802 worker[none:3827] exit with status 64000
+2019-04-15 10:18:49 pid:3828 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:50 pid:3828 Worker[3828] process terminated
+2019-04-15 10:18:50 pid:3802 worker[none:3828] exit with status 64000
+2019-04-15 10:18:50 pid:3829 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:51 pid:3829 Worker[3829] process terminated
+2019-04-15 10:18:51 pid:3802 worker[none:3829] exit with status 64000
+2019-04-15 10:18:51 pid:3830 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:52 pid:3830 Worker[3830] process terminated
+2019-04-15 10:18:52 pid:3802 worker[none:3830] exit with status 64000
+2019-04-15 10:18:52 pid:3831 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:53 pid:3831 Worker[3831] process terminated
+2019-04-15 10:18:53 pid:3802 worker[none:3831] exit with status 64000
+2019-04-15 10:18:53 pid:3832 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:54 pid:3832 Worker[3832] process terminated
+2019-04-15 10:18:54 pid:3802 worker[none:3832] exit with status 64000
+2019-04-15 10:18:54 pid:3833 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:55 pid:3833 Worker[3833] process terminated
+2019-04-15 10:18:55 pid:3802 worker[none:3833] exit with status 64000
+2019-04-15 10:18:55 pid:3834 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:56 pid:3834 Worker[3834] process terminated
+2019-04-15 10:18:56 pid:3802 worker[none:3834] exit with status 64000
+2019-04-15 10:18:56 pid:3835 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:57 pid:3835 Worker[3835] process terminated
+2019-04-15 10:18:57 pid:3802 worker[none:3835] exit with status 64000
+2019-04-15 10:18:57 pid:3836 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:58 pid:3836 Worker[3836] process terminated
+2019-04-15 10:18:58 pid:3802 worker[none:3836] exit with status 64000
+2019-04-15 10:18:58 pid:3837 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:18:59 pid:3837 Worker[3837] process terminated
+2019-04-15 10:18:59 pid:3802 worker[none:3837] exit with status 64000
+2019-04-15 10:19:00 pid:3838 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:01 pid:3838 Worker[3838] process terminated
+2019-04-15 10:19:01 pid:3802 worker[none:3838] exit with status 64000
+2019-04-15 10:19:01 pid:3839 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:02 pid:3839 Worker[3839] process terminated
+2019-04-15 10:19:02 pid:3802 worker[none:3839] exit with status 64000
+2019-04-15 10:19:02 pid:3840 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:03 pid:3840 Worker[3840] process terminated
+2019-04-15 10:19:03 pid:3802 worker[none:3840] exit with status 64000
+2019-04-15 10:19:03 pid:3842 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:04 pid:3842 Worker[3842] process terminated
+2019-04-15 10:19:04 pid:3802 worker[none:3842] exit with status 64000
+2019-04-15 10:19:04 pid:3843 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:05 pid:3843 Worker[3843] process terminated
+2019-04-15 10:19:05 pid:3802 worker[none:3843] exit with status 64000
+2019-04-15 10:19:05 pid:3844 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:06 pid:3844 Worker[3844] process terminated
+2019-04-15 10:19:06 pid:3802 worker[none:3844] exit with status 64000
+2019-04-15 10:19:06 pid:3845 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:07 pid:3845 Worker[3845] process terminated
+2019-04-15 10:19:07 pid:3802 worker[none:3845] exit with status 64000
+2019-04-15 10:19:07 pid:3846 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:08 pid:3846 Worker[3846] process terminated
+2019-04-15 10:19:08 pid:3802 worker[none:3846] exit with status 64000
+2019-04-15 10:19:08 pid:3847 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:09 pid:3847 Worker[3847] process terminated
+2019-04-15 10:19:09 pid:3802 worker[none:3847] exit with status 64000
+2019-04-15 10:19:09 pid:3848 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:10 pid:3848 Worker[3848] process terminated
+2019-04-15 10:19:10 pid:3802 worker[none:3848] exit with status 64000
+2019-04-15 10:19:10 pid:3849 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:11 pid:3849 Worker[3849] process terminated
+2019-04-15 10:19:11 pid:3802 worker[none:3849] exit with status 64000
+2019-04-15 10:19:11 pid:3850 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:12 pid:3850 Worker[3850] process terminated
+2019-04-15 10:19:12 pid:3802 worker[none:3850] exit with status 64000
+2019-04-15 10:19:12 pid:3851 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:13 pid:3851 Worker[3851] process terminated
+2019-04-15 10:19:13 pid:3802 worker[none:3851] exit with status 64000
+2019-04-15 10:19:13 pid:3852 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:14 pid:3852 Worker[3852] process terminated
+2019-04-15 10:19:14 pid:3802 worker[none:3852] exit with status 64000
+2019-04-15 10:19:14 pid:3853 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:15 pid:3853 Worker[3853] process terminated
+2019-04-15 10:19:15 pid:3802 worker[none:3853] exit with status 64000
+2019-04-15 10:19:15 pid:3854 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:16 pid:3854 Worker[3854] process terminated
+2019-04-15 10:19:16 pid:3802 worker[none:3854] exit with status 64000
+2019-04-15 10:19:16 pid:3855 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:17 pid:3855 Worker[3855] process terminated
+2019-04-15 10:19:17 pid:3802 worker[none:3855] exit with status 64000
+2019-04-15 10:19:17 pid:3856 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:18 pid:3856 Worker[3856] process terminated
+2019-04-15 10:19:18 pid:3802 worker[none:3856] exit with status 64000
+2019-04-15 10:19:18 pid:3857 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:19 pid:3857 Worker[3857] process terminated
+2019-04-15 10:19:19 pid:3802 worker[none:3857] exit with status 64000
+2019-04-15 10:19:19 pid:3858 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:20 pid:3858 Worker[3858] process terminated
+2019-04-15 10:19:20 pid:3802 worker[none:3858] exit with status 64000
+2019-04-15 10:19:20 pid:3859 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:21 pid:3859 Worker[3859] process terminated
+2019-04-15 10:19:21 pid:3802 worker[none:3859] exit with status 64000
+2019-04-15 10:19:21 pid:3860 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:22 pid:3860 Worker[3860] process terminated
+2019-04-15 10:19:22 pid:3802 worker[none:3860] exit with status 64000
+2019-04-15 10:19:22 pid:3861 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:23 pid:3861 Worker[3861] process terminated
+2019-04-15 10:19:23 pid:3802 worker[none:3861] exit with status 64000
+2019-04-15 10:19:23 pid:3862 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:24 pid:3862 Worker[3862] process terminated
+2019-04-15 10:19:24 pid:3802 worker[none:3862] exit with status 64000
+2019-04-15 10:19:24 pid:3863 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:25 pid:3863 Worker[3863] process terminated
+2019-04-15 10:19:25 pid:3802 worker[none:3863] exit with status 64000
+2019-04-15 10:19:25 pid:3864 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:26 pid:3864 Worker[3864] process terminated
+2019-04-15 10:19:26 pid:3802 worker[none:3864] exit with status 64000
+2019-04-15 10:19:26 pid:3865 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:27 pid:3865 Worker[3865] process terminated
+2019-04-15 10:19:27 pid:3802 worker[none:3865] exit with status 64000
+2019-04-15 10:19:27 pid:3866 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:28 pid:3866 Worker[3866] process terminated
+2019-04-15 10:19:28 pid:3802 worker[none:3866] exit with status 64000
+2019-04-15 10:19:28 pid:3867 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:29 pid:3867 Worker[3867] process terminated
+2019-04-15 10:19:29 pid:3802 worker[none:3867] exit with status 64000
+2019-04-15 10:19:30 pid:3868 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:31 pid:3868 Worker[3868] process terminated
+2019-04-15 10:19:31 pid:3802 worker[none:3868] exit with status 64000
+2019-04-15 10:19:31 pid:3869 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:32 pid:3869 Worker[3869] process terminated
+2019-04-15 10:19:32 pid:3802 worker[none:3869] exit with status 64000
+2019-04-15 10:19:32 pid:3870 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:33 pid:3870 Worker[3870] process terminated
+2019-04-15 10:19:33 pid:3802 worker[none:3870] exit with status 64000
+2019-04-15 10:19:33 pid:3871 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:34 pid:3871 Worker[3871] process terminated
+2019-04-15 10:19:34 pid:3802 worker[none:3871] exit with status 64000
+2019-04-15 10:19:34 pid:3872 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:35 pid:3872 Worker[3872] process terminated
+2019-04-15 10:19:35 pid:3802 worker[none:3872] exit with status 64000
+2019-04-15 10:19:35 pid:3873 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:36 pid:3873 Worker[3873] process terminated
+2019-04-15 10:19:36 pid:3802 worker[none:3873] exit with status 64000
+2019-04-15 10:19:36 pid:3874 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:37 pid:3874 Worker[3874] process terminated
+2019-04-15 10:19:37 pid:3802 worker[none:3874] exit with status 64000
+2019-04-15 10:19:37 pid:3875 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:38 pid:3875 Worker[3875] process terminated
+2019-04-15 10:19:38 pid:3802 worker[none:3875] exit with status 64000
+2019-04-15 10:19:38 pid:3876 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:39 pid:3876 Worker[3876] process terminated
+2019-04-15 10:19:39 pid:3802 worker[none:3876] exit with status 64000
+2019-04-15 10:19:39 pid:3877 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:40 pid:3877 Worker[3877] process terminated
+2019-04-15 10:19:40 pid:3802 worker[none:3877] exit with status 64000
+2019-04-15 10:19:40 pid:3878 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:41 pid:3878 Worker[3878] process terminated
+2019-04-15 10:19:41 pid:3802 worker[none:3878] exit with status 64000
+2019-04-15 10:19:41 pid:3879 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:42 pid:3879 Worker[3879] process terminated
+2019-04-15 10:19:42 pid:3802 worker[none:3879] exit with status 64000
+2019-04-15 10:19:42 pid:3880 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:43 pid:3880 Worker[3880] process terminated
+2019-04-15 10:19:43 pid:3802 worker[none:3880] exit with status 64000
+2019-04-15 10:19:43 pid:3881 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:44 pid:3881 Worker[3881] process terminated
+2019-04-15 10:19:44 pid:3802 worker[none:3881] exit with status 64000
+2019-04-15 10:19:44 pid:3882 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:45 pid:3882 Worker[3882] process terminated
+2019-04-15 10:19:45 pid:3802 worker[none:3882] exit with status 64000
+2019-04-15 10:19:45 pid:3885 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:46 pid:3885 Worker[3885] process terminated
+2019-04-15 10:19:46 pid:3802 worker[none:3885] exit with status 64000
+2019-04-15 10:19:46 pid:3886 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:47 pid:3886 Worker[3886] process terminated
+2019-04-15 10:19:47 pid:3802 worker[none:3886] exit with status 64000
+2019-04-15 10:19:47 pid:3887 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:48 pid:3887 Worker[3887] process terminated
+2019-04-15 10:19:48 pid:3802 worker[none:3887] exit with status 64000
+2019-04-15 10:19:48 pid:3888 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:49 pid:3888 Worker[3888] process terminated
+2019-04-15 10:19:49 pid:3802 worker[none:3888] exit with status 64000
+2019-04-15 10:19:49 pid:3889 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:50 pid:3889 Worker[3889] process terminated
+2019-04-15 10:19:50 pid:3802 worker[none:3889] exit with status 64000
+2019-04-15 10:19:50 pid:3890 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:51 pid:3890 Worker[3890] process terminated
+2019-04-15 10:19:51 pid:3802 worker[none:3890] exit with status 64000
+2019-04-15 10:19:51 pid:3891 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:52 pid:3891 Worker[3891] process terminated
+2019-04-15 10:19:52 pid:3802 worker[none:3891] exit with status 64000
+2019-04-15 10:19:52 pid:3892 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:53 pid:3892 Worker[3892] process terminated
+2019-04-15 10:19:53 pid:3802 worker[none:3892] exit with status 64000
+2019-04-15 10:19:53 pid:3893 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:54 pid:3893 Worker[3893] process terminated
+2019-04-15 10:19:54 pid:3802 worker[none:3893] exit with status 64000
+2019-04-15 10:19:54 pid:3894 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:55 pid:3894 Worker[3894] process terminated
+2019-04-15 10:19:55 pid:3802 worker[none:3894] exit with status 64000
+2019-04-15 10:19:55 pid:3895 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:56 pid:3895 Worker[3895] process terminated
+2019-04-15 10:19:56 pid:3802 worker[none:3895] exit with status 64000
+2019-04-15 10:19:56 pid:3896 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:57 pid:3896 Worker[3896] process terminated
+2019-04-15 10:19:57 pid:3802 worker[none:3896] exit with status 64000
+2019-04-15 10:19:57 pid:3897 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:19:58 pid:3897 Worker[3897] process terminated
+2019-04-15 10:19:58 pid:3802 worker[none:3897] exit with status 64000
+2019-04-15 10:19:59 pid:3898 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:00 pid:3898 Worker[3898] process terminated
+2019-04-15 10:20:00 pid:3802 worker[none:3898] exit with status 64000
+2019-04-15 10:20:00 pid:3899 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:01 pid:3899 Worker[3899] process terminated
+2019-04-15 10:20:01 pid:3802 worker[none:3899] exit with status 64000
+2019-04-15 10:20:01 pid:3900 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:02 pid:3900 Worker[3900] process terminated
+2019-04-15 10:20:02 pid:3802 worker[none:3900] exit with status 64000
+2019-04-15 10:20:02 pid:3901 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:03 pid:3901 Worker[3901] process terminated
+2019-04-15 10:20:03 pid:3802 worker[none:3901] exit with status 64000
+2019-04-15 10:20:03 pid:3903 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:04 pid:3903 Worker[3903] process terminated
+2019-04-15 10:20:04 pid:3802 worker[none:3903] exit with status 64000
+2019-04-15 10:20:04 pid:3904 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:05 pid:3904 Worker[3904] process terminated
+2019-04-15 10:20:05 pid:3802 worker[none:3904] exit with status 64000
+2019-04-15 10:20:05 pid:3905 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:06 pid:3905 Worker[3905] process terminated
+2019-04-15 10:20:06 pid:3802 worker[none:3905] exit with status 64000
+2019-04-15 10:20:06 pid:3906 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:07 pid:3906 Worker[3906] process terminated
+2019-04-15 10:20:07 pid:3802 worker[none:3906] exit with status 64000
+2019-04-15 10:20:07 pid:3907 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:08 pid:3907 Worker[3907] process terminated
+2019-04-15 10:20:08 pid:3802 worker[none:3907] exit with status 64000
+2019-04-15 10:20:08 pid:3908 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:09 pid:3908 Worker[3908] process terminated
+2019-04-15 10:20:09 pid:3802 worker[none:3908] exit with status 64000
+2019-04-15 10:20:09 pid:3909 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:10 pid:3909 Worker[3909] process terminated
+2019-04-15 10:20:10 pid:3802 worker[none:3909] exit with status 64000
+2019-04-15 10:20:10 pid:3910 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:11 pid:3910 Worker[3910] process terminated
+2019-04-15 10:20:11 pid:3802 worker[none:3910] exit with status 64000
+2019-04-15 10:20:11 pid:3911 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:12 pid:3911 Worker[3911] process terminated
+2019-04-15 10:20:12 pid:3802 worker[none:3911] exit with status 64000
+2019-04-15 10:20:12 pid:3912 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:13 pid:3912 Worker[3912] process terminated
+2019-04-15 10:20:13 pid:3802 worker[none:3912] exit with status 64000
+2019-04-15 10:20:13 pid:3913 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:14 pid:3913 Worker[3913] process terminated
+2019-04-15 10:20:14 pid:3802 worker[none:3913] exit with status 64000
+2019-04-15 10:20:14 pid:3914 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:15 pid:3914 Worker[3914] process terminated
+2019-04-15 10:20:15 pid:3802 worker[none:3914] exit with status 64000
+2019-04-15 10:20:15 pid:3915 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:16 pid:3915 Worker[3915] process terminated
+2019-04-15 10:20:16 pid:3802 worker[none:3915] exit with status 64000
+2019-04-15 10:20:16 pid:3916 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:17 pid:3916 Worker[3916] process terminated
+2019-04-15 10:20:17 pid:3802 worker[none:3916] exit with status 64000
+2019-04-15 10:20:17 pid:3917 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:18 pid:3917 Worker[3917] process terminated
+2019-04-15 10:20:18 pid:3802 worker[none:3917] exit with status 64000
+2019-04-15 10:20:18 pid:3918 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:19 pid:3918 Worker[3918] process terminated
+2019-04-15 10:20:19 pid:3802 worker[none:3918] exit with status 64000
+2019-04-15 10:20:19 pid:3919 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:20 pid:3919 Worker[3919] process terminated
+2019-04-15 10:20:20 pid:3802 worker[none:3919] exit with status 64000
+2019-04-15 10:20:20 pid:3920 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:21 pid:3920 Worker[3920] process terminated
+2019-04-15 10:20:21 pid:3802 worker[none:3920] exit with status 64000
+2019-04-15 10:20:21 pid:3921 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:22 pid:3921 Worker[3921] process terminated
+2019-04-15 10:20:22 pid:3802 worker[none:3921] exit with status 64000
+2019-04-15 10:20:22 pid:3922 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:23 pid:3922 Worker[3922] process terminated
+2019-04-15 10:20:23 pid:3802 worker[none:3922] exit with status 64000
+2019-04-15 10:20:23 pid:3923 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:24 pid:3923 Worker[3923] process terminated
+2019-04-15 10:20:24 pid:3802 worker[none:3923] exit with status 64000
+2019-04-15 10:20:24 pid:3924 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:25 pid:3924 Worker[3924] process terminated
+2019-04-15 10:20:25 pid:3802 worker[none:3924] exit with status 64000
+2019-04-15 10:20:25 pid:3925 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:26 pid:3925 Worker[3925] process terminated
+2019-04-15 10:20:26 pid:3802 worker[none:3925] exit with status 64000
+2019-04-15 10:20:26 pid:3926 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:27 pid:3926 Worker[3926] process terminated
+2019-04-15 10:20:27 pid:3802 worker[none:3926] exit with status 64000
+2019-04-15 10:20:27 pid:3927 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:28 pid:3927 Worker[3927] process terminated
+2019-04-15 10:20:28 pid:3802 worker[none:3927] exit with status 64000
+2019-04-15 10:20:29 pid:3928 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:30 pid:3928 Worker[3928] process terminated
+2019-04-15 10:20:30 pid:3802 worker[none:3928] exit with status 64000
+2019-04-15 10:20:30 pid:3929 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:31 pid:3929 Worker[3929] process terminated
+2019-04-15 10:20:31 pid:3802 worker[none:3929] exit with status 64000
+2019-04-15 10:20:31 pid:3930 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:32 pid:3930 Worker[3930] process terminated
+2019-04-15 10:20:32 pid:3802 worker[none:3930] exit with status 64000
+2019-04-15 10:20:32 pid:3931 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:33 pid:3931 Worker[3931] process terminated
+2019-04-15 10:20:33 pid:3802 worker[none:3931] exit with status 64000
+2019-04-15 10:20:33 pid:3932 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:34 pid:3932 Worker[3932] process terminated
+2019-04-15 10:20:34 pid:3802 worker[none:3932] exit with status 64000
+2019-04-15 10:20:34 pid:3933 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:35 pid:3933 Worker[3933] process terminated
+2019-04-15 10:20:35 pid:3802 worker[none:3933] exit with status 64000
+2019-04-15 10:20:35 pid:3934 Error: Call to undefined method Redis::connect() in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:35 pid:3802 Workerman[index.php] stopping ...
+2019-04-15 10:20:35 pid:3934 Worker[3934] process terminated
+2019-04-15 10:20:35 pid:3802 worker[none:3934] exit with status 64000
+2019-04-15 10:20:35 pid:3802 Workerman[index.php] has been stopped
+2019-04-15 10:20:54 pid:3938 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:20:54 pid:3939 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#7 {main}
+2019-04-15 10:20:55 pid:3939 Worker[3939] process terminated
+2019-04-15 10:20:55 pid:3938 worker[none:3939] exit with status 64000
+2019-04-15 10:20:55 pid:3940 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:56 pid:3940 Worker[3940] process terminated
+2019-04-15 10:20:56 pid:3938 worker[none:3940] exit with status 64000
+2019-04-15 10:20:56 pid:3941 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:57 pid:3941 Worker[3941] process terminated
+2019-04-15 10:20:57 pid:3938 worker[none:3941] exit with status 64000
+2019-04-15 10:20:57 pid:3942 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:20:58 pid:3938 Workerman[index.php] stopping ...
+2019-04-15 10:20:58 pid:3942 Worker[3942] process terminated
+2019-04-15 10:20:58 pid:3938 worker[none:3942] exit with status 64000
+2019-04-15 10:20:58 pid:3938 Workerman[index.php] has been stopped
+2019-04-15 10:21:20 pid:3944 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:21:20 pid:3945 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#7 {main}
+2019-04-15 10:21:21 pid:3945 Worker[3945] process terminated
+2019-04-15 10:21:21 pid:3944 worker[none:3945] exit with status 64000
+2019-04-15 10:21:21 pid:3946 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:21:22 pid:3944 Workerman[index.php] stopping ...
+2019-04-15 10:21:22 pid:3946 Worker[3946] process terminated
+2019-04-15 10:21:22 pid:3944 worker[none:3946] exit with status 64000
+2019-04-15 10:21:22 pid:3944 Workerman[index.php] has been stopped
+2019-04-15 10:21:26 pid:3949 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:21:26 pid:3950 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#7 {main}
+2019-04-15 10:21:27 pid:3950 Worker[3950] process terminated
+2019-04-15 10:21:27 pid:3949 worker[none:3950] exit with status 64000
+2019-04-15 10:21:27 pid:3951 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:21:27 pid:3949 Workerman[index.php] stopping ...
+2019-04-15 10:21:27 pid:3951 Worker[3951] process terminated
+2019-04-15 10:21:27 pid:3949 worker[none:3951] exit with status 64000
+2019-04-15 10:21:27 pid:3949 Workerman[index.php] has been stopped
+2019-04-15 10:23:19 pid:3954 Workerman[index.php] start in DEBUG mode
+2019-04-15 10:23:19 pid:3955 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#7 {main}
+2019-04-15 10:23:20 pid:3955 Worker[3955] process terminated
+2019-04-15 10:23:20 pid:3954 worker[none:3955] exit with status 64000
+2019-04-15 10:23:20 pid:3954 Workerman[index.php] stopping ...
+2019-04-15 10:23:20 pid:3956 Error: Call to private Redis::__construct() from invalid context in /home/vagrant/code/public/helper.php:7
+Stack trace:
+#0 [internal function]: route_on_start(Object(Workerman\Worker))
+#1 /home/vagrant/code/public/Workerman/Worker.php(2342): call_user_func('route_on_start', Object(Workerman\Worker))
+#2 /home/vagrant/code/public/Workerman/Worker.php(1488): Workerman\Worker->run()
+#3 /home/vagrant/code/public/Workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /home/vagrant/code/public/Workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#5 /home/vagrant/code/public/Workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#6 /home/vagrant/code/public/Workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#7 /home/vagrant/code/public/Workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#8 /home/vagrant/code/public/index.php(18): Workerman\Worker::runAll()
+#9 {main}
+2019-04-15 10:23:21 pid:3956 Worker[3956] process terminated
+2019-04-15 10:23:21 pid:3954 worker[none:3956] exit with status 64000
+2019-04-15 10:23:21 pid:3954 Workerman[index.php] has been stopped
