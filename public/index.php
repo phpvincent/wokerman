@@ -3,7 +3,7 @@ use Workerman\Worker;
 require_once './Workerman/Autoloader.php';
 require_once './helper.php';
 
-$redis=new \Redis;
+$redis=\Redis::connect('127.0.0.1',6379);
 var_dump($redis);die;
     // 初始化一个worker容器，监听1234端口
     global $worker;
