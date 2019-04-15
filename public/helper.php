@@ -5,7 +5,7 @@
 	    	//初始化附带信息
 	    	global $redis;
 	    	$redis=new \Redis(); 
-	    	$redis->pconnect('13.250.109.37',6379,1);
+	    	$redis->connect('13.250.109.37',6379);
 	    	var_dump($redis);
 	    }
 	}
