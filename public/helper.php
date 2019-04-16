@@ -99,6 +99,8 @@
 	    	$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!=false||$ip_key!=null){
 	    		unset($ips[$ip_key]);
+	    	}else{
+	    		var_dump($ip_key,$ips,$ip);
 	    	}
 	    	if($ips!=null){
 	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
