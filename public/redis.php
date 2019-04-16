@@ -5,7 +5,7 @@
      * 只有在key不存在时，才会返回 false
      * 这点可用于防止缓存穿透
      */
-    class Redis
+    class Rediss
     {
         private $redis;
 
@@ -79,7 +79,7 @@
                 $attr['db_id'] = $dbId;
             }
 
-            $attr['db_id'] = $attr['db_id'] ? $attr['db_id'] : 0;
+            $attr['db_id'] = isset($attr['db_id']) ? $attr['db_id'] : 0;
 
             $k = md5(implode('', $config) . $attr['db_id']);
             if(! (static::$_instance[$k] instanceof self)) {
