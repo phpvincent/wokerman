@@ -1,6 +1,6 @@
 <?php
 	if (!function_exists("route_on_start")) {
-	 	function route_on_start($connection)
+	 	function route_on_start($woker)
 	    {
             require __DIR__."/redis.php";
             //初始化附带信息
