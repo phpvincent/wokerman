@@ -10,7 +10,7 @@
 //            $redis = Rediss::getInstance($config);
 	    	$redis=new \Redis();
 	    	$redis->connect('13.250.109.37',6379);
-	    	$notice_woker=new Workerman\Worker('text://0.0.0.0:2350');
+	    	$notice_woker=new Workerman\Worker('websocket://0.0.0.0:2350');
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
 	    		var_dump($con->id.'connection');
@@ -157,14 +157,14 @@
 	    	global $route_connections;
 	    	if($data['type']!=0){
 	    		foreach($route_connections[$data['ip']] as $k => $v){
-		    		$v->send($data['msg']."\n");
+		    		$v->send($data['msg']);
 		    	}
 		    	$con->send(json_encode(['msg'=>'已向'.$data['ip'].'发送通知','status'=>0]));
 	    	}else{
 	    		//广播通知
 	    		foreach($route_connections as $k => $v){
 	    			foreach($v as $key => $val){
-	    				$val->send($data['msg']."\n");
+	    				$val->send($data['msg']);
 	    			}
 	    		}
 	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
