@@ -11,7 +11,11 @@
 	    	$redis=new \Redis();
 	    	$redis->connect('13.250.109.37',6379);
 	    	$notice_woker=new Workerman\Worker('text://0.0.0.0:2350');
-	    	$notice_woker->onMessasge='notice_onmessage';
+	    	$notice_woker->onMessage='notice_onmessage';
+	    	$notice_woker->onConnect=function($con){
+	    		var_dump($con->id.'connection');
+	    		$con->send('hello');
+	    	}
 	    	$notice_woker->listen();
 	    }
 	}
