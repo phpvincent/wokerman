@@ -75,6 +75,7 @@
 	    {
 	    	var_dump($connection->getRemoteIp());
 	    	global $redis,$ip_array;
+	    	var_dump($ip_array);
 	    	$route_msg=$connection->msg;
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
 		    	if($route_num<=0){
