@@ -35,19 +35,27 @@
 	        	$redis->hset('routes',$route,1);
 	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        }else{
-	        	$ips=explode(',', $redis->hget('routes_ips',$route));
-	        	if(!in_array($connection->msg['ip'], $ips)){
-	        		if($ips==null){
-	        			$ips=[];
-	        			$ips[]=$connection->msg['ip'];
-	        		}else{
-	        			$ips[]=$connection->msg['ip'];
-	        		}
-	        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
-	        		$redis->hset('routes_ips',$route,implode(',', $ips));
+	        	$old_ips=$redis->hget('routes_ips',$route);
+	        	if($old_ips==false||$old_ips==null){
+	        		var_dump('0',$connection->msg['ip']);
+	        		$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        	}else{
-	        		var_dump($connection->msg['ip'],$ips);	
-	        	}	        
+	        		$ips=explode(',', $old_ips);
+		        	if(!in_array($connection->msg['ip'], $ips)){
+		        		if(count($ips)<=0){
+		        			$ips=[];
+		        			$ips[]=$connection->msg['ip'];
+		        			var_dump('1',$ips);
+		        		}else{
+		        			$ips[]=$connection->msg['ip'];
+		        			var_dump('2',$ips);
+		        		}
+		        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
+		        		$redis->hset('routes_ips',$route,implode(',', $ips));
+		        	}else{
+		        		var_dump('3',$connection->msg['ip'],$ips);	
+		        	}	
+	        	} 	        
 	        }
 	        $ip_info=$data['ip_info'];
 	        $redis->hset('route_ip_msg',$connection->msg['ip'],$ip_info);
