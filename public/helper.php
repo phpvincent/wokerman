@@ -7,6 +7,9 @@
 	    	$ip_array=[];
 	    	$redis=new \Redis(); 
 	    	$redis->connect('13.250.109.37',6379);
+	    	$notice_woker=new Worker('text://0.0.0.0:2350');
+	    	$notice_woker->onMessasge='notice_onmessage';
+	    	$notice_woker->listen();
 	    }
 	}
 	if (!function_exists("route_on_connect")) {
@@ -17,7 +20,7 @@
 	        $ip=$connection->getRemoteIp();
 	        global $route_connections,$ip_array;
 	        $connection->msg=['ip'=>$ip];
-	        $route_connections[$ip]=$connection;
+	        $route_connections[$ip][$connection->id]=$connection;
 	        //记录ip与对应线程数
 	        if(!isset($ip_array[$ip])){
 	        	$ip_array[$ip]=1;
@@ -68,13 +71,16 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
-	    	global $redis,$ip_array;
+	    	global $redis,$ip_array,$route_connections;
 	    	$route_msg=$connection->msg;
+	    	$ip=$route_msg['ip'];
+	    	//删除ip——连接数租中的此连接
+	    	unset($route_connections[$ip][$connection->id]);
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
 		    	if($route_num<=0){
 		    		return;
 		    	}
-	    	$ip=$route_msg['ip'];
+	    	
 	    	if(isset($ip_array[$ip])&&$ip_array[$ip]>1){
 	    		//当前ip下还有其它进程在连接，停止删除数据
 	    			$ip_array[$ip]-=1;
@@ -133,5 +139,26 @@
 	 	function route_msg_start()
 	    {
 	    	return ['ip'=>'','route'=>''];
+	    }
+	}
+	if (!function_exists("notice_onmessage")) {
+	 	function notice_onmessage($con,$data)
+	    {
+	    	$data=json_decode($data,true);
+	    	global $route_connections;
+	    	if($data['type']!=0){
+	    		foreach($route_connections[$data['ip']] as $k => $v){
+		    		$v->send($data['msg']);
+		    	}
+		    	$con->send(json_encode(['msg'=>'已向'.$data['ip'].'发送通知','status'=>0]));
+	    	}else{
+	    		//广播通知
+	    		foreach($route_connections as $k => $v){
+	    			foreach($v as $key => $val){
+	    				$val->send($data['msg']);
+	    			}
+	    		}
+	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
+	    	}
 	    }
 	}
