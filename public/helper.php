@@ -97,7 +97,7 @@
 		    		$redis->hdel('routes',$route_msg['route']);
 		    	}
 	    	$ip_key=array_search($connection->msg['ip'],$ips);
-	    	if($ip_key!=false||$ip_key!=null){
+	    	if($ip_key!==false){
 	    		unset($ips[$ip_key]);
 	    	}else{
 	    		var_dump($ip_key,$ips,$ip);
