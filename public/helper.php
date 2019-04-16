@@ -70,13 +70,31 @@
 	    	global $redis;
 	    	$route_msg=$connection->msg;
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
-	    	if($route_num>0){
-	    		$redis->hset('routes',$route_msg['route'],$route_num-1);
-	    	}else{
-	    		$redis->hdel('routes',$route_msg['route']);
+		    	if($route_num<=0){
+		    		return;
+		    	}
+	    	$ip=$route_msg['ip'];
+	    	$ips=$redis->hget('routes_ips',$route_msg['route']);
+		    	if($ips==false||$ips==null){
+		    		return;
+		    	}
+	    	$ips=explode(',', $ips);
+		    	if(count($ips)<=0){
+		    		return;
+		    	}
+			    if(!in_array($ip, $ips)){
+			    	return;
+			    }
+			    //处理routes的人数
+		    	if($route_num>0){
+		    		$redis->hset('routes',$route_msg['route'],$route_num-1);
+		    	}else{
+		    		$redis->hdel('routes',$route_msg['route']);
+		    	}
+	    	$ip_key=array_search($connection->msg['ip'],$ips);
+	    	if($ip_key!=false||$ip_key!=null){
+	    		unset($ips[$ip_key]);
 	    	}
-	    	$ips=explode(',', $redis->hget('routes_ips',$route_msg['route']));
-	    	unset($ips[array_search($connection->msg['ip'],$ips)]);
 	    	if($ips!=null){
 	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
