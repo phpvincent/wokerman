@@ -11,22 +11,7 @@ require_once './helper.php';
     $route_connections=[];
    
     // worker进程启动后建立一个内部通讯端口
-    $route_worker->onWorkerStart=function($woker)
-    {
-        
-            require __DIR__."/redis.php";
-            //初始化附带信息
-            global $redis,$ip_array;
-            $ip_array=[];
-//            $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
-//            $redis = Rediss::getInstance($config);
-            $redis=new \Redis();
-            $redis->connect('13.250.109.37',6379);
-            $notice_woker=new Worker('text://0.0.0.0:2350');
-            $notice_woker->onMessasge='notice_onmessage';
-            $notice_woker->listen();
-        
-    };
+    $route_worker->onWorkerStart='route_on_start';
     $route_worker->onConnect='route_on_connect';
     $route_worker->onMessage='route_on_message';
     $route_worker->onClose='route_on_close';
