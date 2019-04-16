@@ -25,7 +25,7 @@ $worker->onWorkerStart = function($worker)
     {
         global $redis;
         $ip=$connection->getRemoteIp();
-        $redis->get('UID:'.$ip,$connection->uid);
+        $uid = $redis->get('UID:'.$ip,$connection->uid);
 
         // $data数组格式，里面有uid，表示向那个uid的页面推送数据
 //        $data = json_decode($buffer, true);
@@ -34,7 +34,8 @@ $worker->onWorkerStart = function($worker)
 //        $ret = sendMessageByUid($uid, $buffer);
         // 返回推送结果
 //        $connection->send('ok');
-//        var_dump(111);
+        var_dump(111);
+        var_dump($uid);
 //        var_dump($connection->uid);
 //        var_dump($connection);
 //        var_dump(2222);
