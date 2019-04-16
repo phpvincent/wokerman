@@ -147,6 +147,7 @@
 	if (!function_exists("notice_onmessage")) {
 	 	function notice_onmessage($con,$data)
 	    {
+	    	var_dump($data);
 	    	$data=json_decode($data,true);
 	    	global $route_connections;
 	    	if($data['type']!=0){
