@@ -103,8 +103,10 @@
 	    		var_dump($ip_key,$ips,$ip);
 	    	}
 	    	if($ips!=null){
+	    		var_dump('aaaa',$ips);
 	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
+	    		var_dump('bbb',$ips);
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
 	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
