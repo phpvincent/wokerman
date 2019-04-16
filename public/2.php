@@ -28,9 +28,10 @@ $worker->onWorkerStart = function($worker)
 //         通过workerman，向uid的页面推送数据
 //        $ret = sendMessageByUid($uid, $buffer);
         // 返回推送结果
-        $connection->send('ok');
+//        $connection->send('ok');
         var_dump(111);
-
+        var_dump($connection->uid);
+        var_dump($connection);
         var_dump(2222);
     };
     // ## 执行监听 ##
@@ -45,7 +46,7 @@ $worker->onConnect=function ($connection)
 //    $con_msg=route_msg_start();
     $ip=$connection->getRemoteIp();
     var_dump(3333);
-    var_dump($connection);
+    var_dump($connection->uid);
     var_dump($ip);
     var_dump(444);
 //    global $route_connections,$ip_array;
