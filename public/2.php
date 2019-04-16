@@ -7,7 +7,7 @@ require_once './helper.php';
     Worker::$stdoutFile = '/tmp/stdout.log';
     $route_worker = new Worker('websocket://0.0.0.0:6666');
     // 这里进程数必须设置为1
-    $route_worker->count = 1;
+    $route_worker->count = 4;
     $route_connections=[];
 
     // worker进程启动后建立一个内部通讯端口
@@ -27,6 +27,7 @@ require_once './helper.php';
     //        $redis=new \Redis();
     //        $redis->connect('13.250.109.37',6379);
         $notice_woker=new Workerman\Worker('text://0.0.0.0:6789');
+        $notice_woker->reusePort = true;
         $notice_woker->onMessasge='notice_onmessage';
         $notice_woker->listen();
     }
