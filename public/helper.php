@@ -2,11 +2,14 @@
 	if (!function_exists("route_on_start")) {
 	 	function route_on_start($connection)
 	    {
-	    	//初始化附带信息
+            require __DIR__."/redis.php";
+            //初始化附带信息
 	    	global $redis,$ip_array;
 	    	$ip_array=[];
-	    	$redis=new \Redis(); 
-	    	$redis->connect('13.250.109.37',6379);
+            $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
+            $redis = Rediss::getInstance($config);
+//	    	$redis=new \Redis();
+//	    	$redis->connect('13.250.109.37',6379);
 	    }
 	}
 	if (!function_exists("route_on_connect")) {
