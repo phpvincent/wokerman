@@ -24,7 +24,7 @@
 	        }else{
 	        	$ip_array[$ip]+=1;
 	        }
-	        echo 'ip:'.$ip.'/n';
+	        echo 'ip:'.$ip."/n";
 	    }
 	}
     if (!function_exists("route_on_message")) {
@@ -44,7 +44,6 @@
 	        }else{
 	        	$old_ips=$redis->hget('routes_ips',$route);
 	        	if($old_ips==false||$old_ips==null){
-	        		var_dump('0',$connection->msg['ip']);
 	        		$redis->hset('routes_ips',$route,$connection->msg['ip']);
 	        	}else{
 	        		$ips=explode(',', $old_ips);
@@ -52,15 +51,11 @@
 		        		if(count($ips)<=0){
 		        			$ips=[];
 		        			$ips[]=$connection->msg['ip'];
-		        			var_dump('1',$ips);
 		        		}else{
 		        			$ips[]=$connection->msg['ip'];
-		        			var_dump('2',$ips);
 		        		}
 		        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
 		        		$redis->hset('routes_ips',$route,implode(',', $ips));
-		        	}else{
-		        		var_dump('3',$connection->msg['ip'],$ips);	
 		        	}	
 	        	} 	        
 	        }
@@ -73,9 +68,7 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
-	    	var_dump($connection->getRemoteIp());
 	    	global $redis,$ip_array;
-	    	var_dump($ip_array);
 	    	$route_msg=$connection->msg;
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
 		    	if($route_num<=0){
@@ -84,7 +77,6 @@
 	    	$ip=$route_msg['ip'];
 	    	if(isset($ip_array[$ip])&&$ip_array[$ip]>1){
 	    		//当前ip下还有其它进程在连接，停止删除数据
-	    		var_dump($ip_array,$ip);
 	    			$ip_array[$ip]-=1;
 	    			return;
 	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]<=1){
@@ -123,7 +115,7 @@
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
 	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
-	    	echo 'del'.json_encode($route_msg).'/n';
+	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
 	}
 	/**
