@@ -4,7 +4,7 @@ require_once './Workerman/Autoloader.php';
 require __DIR__."/redis.php";
 
 // 初始化一个worker容器，监听1234端口
-$worker = new Worker('websocket://0.0.0.0:1234');
+$worker = new Worker('websocket://0.0.0.0:6666');
 
 /*
  * 注意这里进程数必须设置为1，否则会报端口占用错误
@@ -17,11 +17,15 @@ $worker->onWorkerStart = function($worker)
     global $redis;
     $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
     $redis = Rediss::getInstance($config);
+
     // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
-    $inner_worker1 = new Worker('text://0.0.0.0:5678');
+    $inner_worker1 = new Worker('websocket://0.0.0.0:5678');
     $inner_worker1->reusePort = true;
     $inner_worker1->onMessage = function($connection, $buffer)
     {
+        global $redis;
+        $ip=$connection->getRemoteIp();
+        $redis->get('UID:'.$ip,$connection->uid);
 
         // $data数组格式，里面有uid，表示向那个uid的页面推送数据
 //        $data = json_decode($buffer, true);
@@ -30,10 +34,10 @@ $worker->onWorkerStart = function($worker)
 //        $ret = sendMessageByUid($uid, $buffer);
         // 返回推送结果
 //        $connection->send('ok');
-        var_dump(111);
-        var_dump($connection->uid);
-        var_dump($connection);
-        var_dump(2222);
+//        var_dump(111);
+//        var_dump($connection->uid);
+//        var_dump($connection);
+//        var_dump(2222);
     };
     // ## 执行监听 ##
     $inner_worker1->listen();
@@ -43,11 +47,14 @@ $worker->uidConnections = array();
 
 $worker->onConnect=function ($connection)
 {
+    global $redis;
+
     //初始化附带信息
 //    $con_msg=route_msg_start();
     $ip=$connection->getRemoteIp();
     var_dump(3333);
     var_dump($connection->uid);
+    $redis->set('UID:'.$ip,$connection->uid);
     var_dump($ip);
     var_dump(444);
 //    global $route_connections,$ip_array;
