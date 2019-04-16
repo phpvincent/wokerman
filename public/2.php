@@ -10,62 +10,56 @@ $worker = new Worker('websocket://0.0.0.0:1234');
  * 注意这里进程数必须设置为1，否则会报端口占用错误
  * (php 7可以设置进程数大于1，前提是$inner_text_worker->reusePort=true)
  */
-$worker->count = 1;
+$worker->count = 4;
 // worker进程启动后创建一个text Worker以便打开一个内部通讯端口
 $worker->onWorkerStart = function($worker)
 {
     global $redis;
     $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
     $redis = Rediss::getInstance($config);
-    var_dump($worker);
     // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
     $inner_worker1 = new Worker('text://0.0.0.0:5678');
     $inner_worker1->onMessage = function($connection, $buffer)
     {
+
         // $data数组格式，里面有uid，表示向那个uid的页面推送数据
-        $data = json_decode($buffer, true);
-        $uid = $data['uid'];
-        // 通过workerman，向uid的页面推送数据
-        $ret = sendMessageByUid($uid, $buffer);
+//        $data = json_decode($buffer, true);
+//        $uid = $data['uid'];
+//         通过workerman，向uid的页面推送数据
+//        $ret = sendMessageByUid($uid, $buffer);
         // 返回推送结果
-        $connection->send($ret ? 'ok' : 'fail');
+        $connection->send('ok');
+        var_dump(111);
+
+        var_dump(2222);
     };
     // ## 执行监听 ##
     $inner_worker1->listen();
-
-    // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
-    $inner_worker2 = new Worker('text://0.0.0.0:5679');
-    $inner_worker2->onMessage = function($connection, $buffer)
-    {
-        // $data数组格式，里面有uid，表示向那个uid的页面推送数据
-        $data = json_decode($buffer, true);
-        $uid = $data['uid'];
-        // 通过workerman，向uid的页面推送数据
-        $ret = sendMessageByUid($uid, $buffer);
-        // 返回推送结果
-        $connection->send($ret ? 'ok' : 'fail');
-    };
-    // ## 执行监听 ##
-    $inner_worker2->listen();
-
-
-    // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
-    $inner_worker3 = new Worker('text://0.0.0.0:5680');
-    $inner_worker3->onMessage = function($connection, $buffer)
-    {
-        // $data数组格式，里面有uid，表示向那个uid的页面推送数据
-        $data = json_decode($buffer, true);
-        $uid = $data['uid'];
-        // 通过workerman，向uid的页面推送数据
-        $ret = sendMessageByUid($uid, $buffer);
-        // 返回推送结果
-        $connection->send($ret ? 'ok' : 'fail');
-    };
-    // ## 执行监听 ##
-    $inner_worker3->listen();
 };
 // 新增加一个属性，用来保存uid到connection的映射
 $worker->uidConnections = array();
+
+$worker->onConnect=function ($connection)
+{
+    //初始化附带信息
+//    $con_msg=route_msg_start();
+    $ip=$connection->getRemoteIp();
+    var_dump(3333);
+    var_dump($connection);
+    var_dump($ip);
+    var_dump(444);
+//    global $route_connections,$ip_array;
+//    $connection->msg=['ip'=>$ip];
+//    $route_connections[$ip]=$connection;
+//    //记录ip与对应线程数
+//    if(!isset($ip_array[$ip])){
+//        $ip_array[$ip]=1;
+//    }else{
+//        $ip_array[$ip]+=1;
+//    }
+//    echo 'ip:'.$ip."/n";
+};
+
 // 当有客户端发来消息时执行的回调函数
 $worker->onMessage = function($connection, $data)
 {
