@@ -87,6 +87,8 @@
 	    		var_dump($ip_array,$ip);
 	    			$ip_array[$ip]-=1;
 	    			return;
+	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]<=1){
+	    		unset($ip_array[$ip]);
 	    	}
 	    	/*$ready_count=0;
 	    	foreach($connection->worker->connections as $con){
@@ -105,7 +107,7 @@
 			    	return;
 			    }
 			    //处理routes的人数
-		    	if($route_num>0){
+		    	if($route_num>1){
 		    		$redis->hset('routes',$route_msg['route'],$route_num-1);
 		    	}else{
 		    		$redis->hdel('routes',$route_msg['route']);
