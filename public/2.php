@@ -50,7 +50,7 @@ $worker->onWorkerStart = function($worker)
 
 
     // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
-    $inner_worker3 = new Worker('text://0.0.0.0:5679');
+    $inner_worker3 = new Worker('text://0.0.0.0:5680');
     $inner_worker3->onMessage = function($connection, $buffer)
     {
         // $data数组格式，里面有uid，表示向那个uid的页面推送数据
