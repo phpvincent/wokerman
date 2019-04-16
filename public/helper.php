@@ -153,17 +153,18 @@
 	    {
 	    	var_dump($data);
 	    	$data=json_decode($data,true);
+	    	var_dump($data);
 	    	global $route_connections;
 	    	if($data['type']!=0){
 	    		foreach($route_connections[$data['ip']] as $k => $v){
-		    		$v->send($data['msg']);
+		    		$v->send($data['msg']."\n");
 		    	}
 		    	$con->send(json_encode(['msg'=>'已向'.$data['ip'].'发送通知','status'=>0]));
 	    	}else{
 	    		//广播通知
 	    		foreach($route_connections as $k => $v){
 	    			foreach($v as $key => $val){
-	    				$val->send($data['msg']);
+	    				$val->send($data['msg']."\n");
 	    			}
 	    		}
 	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
