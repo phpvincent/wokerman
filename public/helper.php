@@ -3,7 +3,8 @@
 	 	function route_on_start($connection)
 	    {
 	    	//初始化附带信息
-	    	global $redis;
+	    	global $redis $ip_array;
+	    	$ip_array=[];
 	    	$redis=new \Redis(); 
 	    	$redis->connect('13.250.109.37',6379);
 	    }
@@ -14,9 +15,15 @@
 	    	//初始化附带信息
 	    	$con_msg=route_msg_start();
 	        $ip=$connection->getRemoteIp();
-	        global $route_connections;
+	        global $route_connections $ip_array;
 	        $connection->msg=['ip'=>$ip];
 	        $route_connections[$ip]=$connection;
+	        //记录ip与对应线程数
+	        if(!isset($ip_array[$ip])){
+	        	$ip_array[$ip]=1;
+	        }else{
+	        	$ip_array[$ip]+=1;
+	        }
 	        echo 'ip:'.$ip.'/n';
 	    }
 	}
@@ -67,18 +74,25 @@
 	 	function route_on_close($connection)
 	    {
 	    	var_dump($connection->getRemoteIp());
-	    	global $redis;
+	    	global $redis $ip_array;
 	    	$route_msg=$connection->msg;
 	    	$route_num=$redis->hget('routes',$route_msg['route']);
 		    	if($route_num<=0){
 		    		return;
 		    	}
 	    	$ip=$route_msg['ip'];
-	    	$ready_count=0;
+	    	if(isset($ip_array[$ip])&&$ip_array[$ip]>1){
+	    		//当前ip下还有其它进程在连接，停止删除数据
+	    		var_dump($ip_array,$ip);
+	    			$ip_array[$ip]-=1;
+
+	    			return;
+	    	}
+	    	/*$ready_count=0;
 	    	foreach($connection->worker->connections as $con){
 	    		if($con->msg['ip']==$ip) $ready_count+=1;
 	    	}
-	    	if($ready_count>1) return;
+	    	if($ready_count>1) return;*/
 	    	$ips=$redis->hget('routes_ips',$route_msg['route']);
 		    	if($ips==false||$ips==null){
 		    		return;
@@ -98,15 +112,12 @@
 		    	}
 	    	$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!==false){
+	    		//删除ip组中的此ip
 	    		unset($ips[$ip_key]);
-	    	}else{
-	    		var_dump($ip_key,$ips,$ip);
 	    	}
 	    	if($ips!=null){
-	    		var_dump('aaaa',$ips);
 	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
-	    		var_dump('bbb',$ips);
 	    		$redis->hdel('routes_ips',$route_msg['route']);
 	    	}
 	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
