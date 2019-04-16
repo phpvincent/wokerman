@@ -19,6 +19,7 @@ $worker->onWorkerStart = function($worker)
     $redis = Rediss::getInstance($config);
     // 开启一个内部端口，方便内部系统推送数据，Text协议格式 文本+换行符
     $inner_worker1 = new Worker('text://0.0.0.0:5678');
+    $inner_worker1->reusePort = true;
     $inner_worker1->onMessage = function($connection, $buffer)
     {
 
