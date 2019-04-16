@@ -74,6 +74,11 @@
 		    		return;
 		    	}
 	    	$ip=$route_msg['ip'];
+	    	$ready_count=0;
+	    	foreach($connection->worker->connections as $con){
+	    		if($con->msg['ip']==$ip) $ready_count+=1;
+	    	}
+	    	if($ready_count>0) return;
 	    	$ips=$redis->hget('routes_ips',$route_msg['route']);
 		    	if($ips==false||$ips==null){
 		    		return;
