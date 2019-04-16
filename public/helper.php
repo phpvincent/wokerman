@@ -15,7 +15,7 @@
 	    	$notice_woker->onConnect=function($con){
 	    		var_dump($con->id.'connection');
 	    		$con->send('hello');
-	    	}
+	    	};
 	    	$notice_woker->listen();
 	    }
 	}
