@@ -2009,3 +2009,22 @@ Stack trace:
 2019-04-15 10:23:21 pid:3956 Worker[3956] process terminated
 2019-04-15 10:23:21 pid:3954 worker[none:3956] exit with status 64000
 2019-04-15 10:23:21 pid:3954 Workerman[index.php] has been stopped
+2019-04-16 10:58:46 pid:23107 Workerman[2.php] start in DEBUG mode
+2019-04-16 11:04:01 pid:23107 Workerman[2.php] stopping ...
+2019-04-16 11:04:01 pid:23107 Workerman[2.php] has been stopped
+2019-04-16 11:04:02 pid:23112 Workerman[2.php] start in DEBUG mode
+2019-04-17 01:29:15 pid:2109 Workerman[2.php] start in DEBUG mode
+2019-04-17 01:32:02 pid:2109 Workerman[2.php] stopping ...
+2019-04-17 01:32:02 pid:2109 Workerman[2.php] has been stopped
+2019-04-17 01:32:08 pid:2115 Workerman[2.php] start in DEBUG mode
+2019-04-17 02:52:24 pid:2115 Workerman[2.php] stopping ...
+2019-04-17 02:52:24 pid:2115 Workerman[2.php] has been stopped
+2019-04-17 09:38:59 pid:3126 Workerman[2.php] start in DEBUG mode
+2019-04-17 09:40:12 pid:3126 Workerman[2.php] stopping ...
+2019-04-17 09:40:12 pid:3126 Workerman[2.php] has been stopped
+2019-04-17 09:41:12 pid:3178 Workerman[2.php] start in DEBUG mode
+2019-04-17 09:41:17 pid:3178 Workerman[2.php] stopping ...
+2019-04-17 09:41:17 pid:3178 Workerman[2.php] has been stopped
+2019-04-17 09:43:22 pid:3183 Workerman[2.php] start in DEBUG mode
+2019-04-17 09:46:09 pid:3183 Workerman[2.php] stopping ...
+2019-04-17 09:46:09 pid:3183 Workerman[2.php] has been stopped

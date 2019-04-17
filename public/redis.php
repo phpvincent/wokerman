@@ -103,8 +103,16 @@
                     if($attr['db_id'] != 0)
                         static::$_instance[$k]->select($attr['db_id']);
                 }
-                return static::$_instance[$k];
+            }else{
+                static::$_instance[$k] = new self($config, $attr);
+                static::$_instance[$k]->k = $k;
+                static::$_instance[$k]->dbId = $attr['db_id'];
+
+                //如果不是0号库，选择一下数据库。
+                if($attr['db_id'] != 0)
+                    static::$_instance[$k]->select($attr['db_id']);
             }
+            return static::$_instance[$k];
         }
 
         private function __clone(){}
