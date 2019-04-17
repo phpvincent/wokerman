@@ -6,10 +6,10 @@
             //初始化附带信息
 	    	global $redis,$ip_array;
 	    	$ip_array=[];
-//            $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
-//            $redis = Rediss::getInstance($config);
-	    	$redis=new \Redis();
-	    	$redis->connect('13.250.109.37',6379);
+            $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
+            $redis = Rediss::getInstance($config);
+//	    	$redis=new \Redis();
+//	    	$redis->connect('13.250.109.37',6379);
 	    	$notice_woker=new Workerman\Worker('websocket://0.0.0.0:2350');
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
@@ -48,13 +48,13 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        if($redis->hget('routes',$route)==null||$redis->hget('routes',$route)==false){
-	        	$redis->hset('routes',$route,1);
-	        	$redis->hset('routes_ips',$route,$connection->msg['ip']);
+	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
+	        	$redis->hSet('routes',$route,1);
+	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
 	        }else{
-	        	$old_ips=$redis->hget('routes_ips',$route);
+	        	$old_ips=$redis->hGet('routes_ips',$route);
 	        	if($old_ips==false||$old_ips==null){
-	        		$redis->hset('routes_ips',$route,$connection->msg['ip']);
+	        		$redis->hSet('routes_ips',$route,$connection->msg['ip']);
 	        	}else{
 	        		$ips=explode(',', $old_ips);
 		        	if(!in_array($connection->msg['ip'], $ips)){
@@ -64,13 +64,13 @@
 		        		}else{
 		        			$ips[]=$connection->msg['ip'];
 		        		}
-		        		$redis->hset('routes',$route,$redis->hget('routes',$route)+1);
-		        		$redis->hset('routes_ips',$route,implode(',', $ips));
+		        		$redis->hSet('routes',$route,$redis->hGet('routes',$route)+1);
+		        		$redis->hSet('routes_ips',$route,implode(',', $ips));
 		        	}	
 	        	} 	        
 	        }
 	        $ip_info=$data['ip_info'];
-	        $redis->hset('route_ip_msg',$connection->msg['ip'],$ip_info);
+	        $redis->hSet('route_ip_msg',$connection->msg['ip'],$ip_info);
 	        $connection->send( ws_return('connect_success',0));
 	        return;
 	    }
@@ -83,7 +83,7 @@
 	    	$ip=$route_msg['ip'];
 	    	//删除ip——连接数租中的此连接
 	    	unset($route_connections[$ip][$connection->id]);
-	    	$route_num=$redis->hget('routes',$route_msg['route']);
+	    	$route_num=$redis->hGet('routes',$route_msg['route']);
 		    	if($route_num<=0){
 		    		return;
 		    	}
@@ -100,7 +100,7 @@
 	    		if($con->msg['ip']==$ip) $ready_count+=1;
 	    	}
 	    	if($ready_count>1) return;*/
-	    	$ips=$redis->hget('routes_ips',$route_msg['route']);
+	    	$ips=$redis->hGet('routes_ips',$route_msg['route']);
 		    	if($ips==false||$ips==null){
 		    		return;
 		    	}
@@ -113,9 +113,9 @@
 			    }
 			    //处理routes的人数
 		    	if($route_num>1){
-		    		$redis->hset('routes',$route_msg['route'],$route_num-1);
+		    		$redis->hSet('routes',$route_msg['route'],$route_num-1);
 		    	}else{
-		    		$redis->hdel('routes',$route_msg['route']);
+		    		$redis->hDel('routes',$route_msg['route']);
 		    	}
 	    	$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!==false){
@@ -123,11 +123,11 @@
 	    		unset($ips[$ip_key]);
 	    	}
 	    	if($ips!=null){
-	    		$redis->hset('routes_ips',$route_msg['route'],implode(',', $ips));
+	    		$redis->hSet('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
-	    		$redis->hdel('routes_ips',$route_msg['route']);
+	    		$redis->hDel('routes_ips',$route_msg['route']);
 	    	}
-	    	$redis->hdel('route_ip_msg',$connection->msg['ip']);
+	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
 	}
