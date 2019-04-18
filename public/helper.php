@@ -83,7 +83,7 @@
 	 	function route_on_close($connection)
 	    {
 	    	global $redis,$ip_array,$route_connections;
-	    	var_dump('c'.$connection->msg);
+	    	var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	$ip=$route_msg['ip'];
 	    	//删除ip——连接数租中的此连接
@@ -132,6 +132,7 @@
 	    	}else{
 	    		$redis->hDel('routes_ips',$route_msg['route']);
 	    	}
+	    	var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
