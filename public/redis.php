@@ -31,6 +31,13 @@
             'db_id' => 0,
         ];
 
+        //redis 默认配置信息
+        protected $config = [
+            'port'=>6379,
+            'host'=>"127.0.0.1",
+            'auth'=>''
+        ];
+
         // 连接过期时间
         protected $expireTime;
 
@@ -49,6 +56,10 @@
         {
             $this->attr  = array_merge($this->attr, $attr);
             $this->redis = new \Redis;
+            if(empty($config) || !$config){
+                $config = $this->config;
+            }
+            $this->config = $config;
             $this->port  = $config['port'] ? $config['port'] : 6379;
             $this->host  = $config['host'];
             $this->redis->connect($this->host, $this->port, $this->attr['timeout']);
@@ -127,6 +138,9 @@
          */
         public function getRedis()
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis;
         }
 
@@ -140,6 +154,9 @@
          */
         public function hGet($key, $field)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hGet($key, $field);
         }
 
@@ -152,6 +169,9 @@
          */
         public function hSet($key, $field, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hSet($key,$field,$value);
         }
 
@@ -163,6 +183,9 @@
          */
         public function hExists($key, $field)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hExists($key, $field);
         }
 
@@ -174,6 +197,9 @@
          */
         public function hDel($key, $field)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             $fieldArr = explode(',', $field);
             $delNum = 0;
 
@@ -193,6 +219,9 @@
          */
         public function hLen($key)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hLen($key);
         }
 
@@ -205,6 +234,9 @@
          */
         public function hSetNx($key, $field, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hSetNx($key, $field, $value);
         }
 
@@ -216,6 +248,9 @@
          */
         public function hMset($key, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             if(!is_array($value))
                 return false;
             return $this->redis->hMset($key, $value);
@@ -229,6 +264,9 @@
          */
         public function hMget($key, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             if(!is_array($value))
                 $value = explode(',', $value);
             return $this->redis->hMget($key, $value);
@@ -243,6 +281,9 @@
          */
         public function hIncrBy($key, $field, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             $value = intval($value);
             return $this->redis->hIncrBy($key, $field, $value);
         }
@@ -254,6 +295,9 @@
          */
         public function hKeys($key)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hKeys($key);
         }
 
@@ -264,6 +308,9 @@
          */
         public function hVals($key)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hVals($key);
         }
 
@@ -274,6 +321,9 @@
          */
         public function hGetAll($key)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->hGetAll($key);
         }
 
@@ -289,6 +339,9 @@
          */
         public function zAdd($key, $order, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zAdd($key, $order, $value);
         }
 
@@ -301,6 +354,9 @@
          */
         public function zincrby($key, $num, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zincrby($key, $num, $value);
         }
 
@@ -312,6 +368,9 @@
          */
         public function zRem($key, $value)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zRem($key, $value);
         }
 
@@ -324,6 +383,9 @@
          */
         public function zRange($key, $start, $end)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zRange($key, $start, $end);
         }
 
@@ -336,6 +398,9 @@
          */
         public function zRevRange($key, $start, $end)
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zRevRange($key, $start, $end);
         }
 
@@ -352,6 +417,9 @@
          */
         public function zRangeByScore($key, $start = 0, $end = 0, $option = [])
         {
+//            if(!$this->redis){
+//                new self($this->config,$this->attr);
+//            }
             return $this->redis->zRangeByScore($key, $start, $end, $option);
         }
 

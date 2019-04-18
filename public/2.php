@@ -19,9 +19,9 @@ require __DIR__."/redis.php";
         //初始化附带信息
         global $redis,$ip_array;
         $ip_array=[];
-        var_dump(99999);
         $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
         $redis = Rediss::getInstance($config);
+        var_dump($redis);
         //        $redis=new \Redis();
         //        $redis->connect('13.250.109.37',6379);
         $notice_woker=new Workerman\Worker('websocket://0.0.0.0:5678');
@@ -30,6 +30,7 @@ require __DIR__."/redis.php";
         {
             var_dump(111);
             global $redis,$datas;
+            var_dump($redis);
             if(!in_array($data, $datas)){
                 array_push($datas, $data);
                 $data=json_decode($data,true);
@@ -92,6 +93,7 @@ require __DIR__."/redis.php";
     {
         var_dump(22222);
         global $redis,$datas;
+        var_dump($redis);
         if(!in_array($data, $datas)) {
             array_push($datas, $data);
             $data = json_decode($data, true);
