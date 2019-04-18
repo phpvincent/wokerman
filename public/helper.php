@@ -42,6 +42,9 @@
 	    {	
 	    	global $redis;
 	    	$data=json_decode($data,true);
+	    	if(isset($data['heartbeat'])){
+	    		return;
+	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
 	    		$connection->send(ws_return('route or ip_info not found',1));
 	    		return;
@@ -71,6 +74,7 @@
 	        	} 	        
 	        }
 	        $ip_info=$data['ip_info'];
+	        var_dump($ip_info);
 	        $redis->hSet('route_ip_msg',$connection->msg['ip'],$ip_info);
 	        $connection->send( ws_return('connect_success',0));
 	        return;
