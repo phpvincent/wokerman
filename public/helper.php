@@ -74,8 +74,7 @@
 	        	} 	        
 	        }
 	        $ip_info=$data['ip_info'];
-	        var_dump($ip_info);
-	        $redis->hSet('route_ip_msg',$connection->msg['ip'],$ip_info);
+	        $redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	        $connection->send( ws_return('connect_success',0));
 	        return;
 	    }
