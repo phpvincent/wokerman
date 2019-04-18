@@ -48,6 +48,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
+	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
 	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
@@ -79,6 +80,7 @@
 	 	function route_on_close($connection)
 	    {
 	    	global $redis,$ip_array,$route_connections;
+	    	var_dump('c'.$connection->msg);
 	    	$route_msg=$connection->msg;
 	    	$ip=$route_msg['ip'];
 	    	//删除ip——连接数租中的此连接
