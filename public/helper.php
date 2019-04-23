@@ -111,7 +111,7 @@
 	    			try{
 	    				$redis->hDel('routes',$value);
 	    				$dips=$redis->hGet('routes_ips',$value);	
-	    				if($dips==false||$ips==null){
+	    				if($dips==false||$dips==null){
 				    		return;
 				    	}
 	    				$dips=explode(',', $dips);
