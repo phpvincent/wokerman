@@ -100,6 +100,7 @@
 	    			$ip_array[$ip]['num']-=1;
 	    			return;
 	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1){
+	    		var_dump($ip_array[$ip]);
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
 	    				$redis->hDel('routes',$value);
