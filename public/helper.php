@@ -110,7 +110,7 @@
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
 	    				$redis->hDel('routes',$value);
-	    				$dips=hGet('routes_ips',$value);	
+	    				$dips=$redis->hGet('routes_ips',$value);	
 	    				if($dips==false||$ips==null){
 				    		return;
 				    	}
