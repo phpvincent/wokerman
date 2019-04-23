@@ -30,9 +30,9 @@
 	        $route_connections[$ip][$connection->id]=$connection;
 	        //记录ip与对应线程数
 	        if(!isset($ip_array[$ip])){
-	        	$ip_array[$ip]=1;
+	        	$ip_array[$ip]['num']=1;
 	        }else{
-	        	$ip_array[$ip]+=1;
+	        	$ip_array[$ip]['num']+=1;
 	        }
 	        echo 'ip:'.$ip."/n";
 	    }
@@ -95,11 +95,11 @@
 		    		return;
 		    	}
 	    	
-	    	if(isset($ip_array[$ip])&&$ip_array[$ip]>1){
+	    	if(isset($ip_array[$ip]['num'])&&$ip_array[$ip]['num']>1){
 	    		//当前ip下还有其它进程在连接，停止删除数据
-	    			$ip_array[$ip]-=1;
+	    			$ip_array[$ip]['num']-=1;
 	    			return;
-	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]<=1){
+	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1){
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
 	    				$redis->hDel('routes',$value);
@@ -162,7 +162,7 @@
 	    	}else{
 	    		$redis->hDel('routes_ips',$route_msg['route']);
 	    	}*/
-	    	var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
+	    	//var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
