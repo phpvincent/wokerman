@@ -56,6 +56,8 @@
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
 	        		$ip_array[$connection->msg['ip']]['route'][]=$route;
 	        	}
+	        }else{
+	        	$ip_array[$connection->msg['ip']]['route'][]=$route;
 	        }
 	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
