@@ -40,9 +40,10 @@
     if (!function_exists("route_on_message")) {
 	 	function route_on_message($connection,$data)
 	    {	
-	    	global $redis;
+	    	global $redis,$ip_array;
 	    	$data=json_decode($data,true);
 	    	if(isset($data['heartbeat'])){
+	    		$connection->send( ws_return('heartbeat success',0));
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
@@ -51,6 +52,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
+	        $ip_array['ip']['route'][]=$route;
 	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
@@ -98,6 +100,34 @@
 	    			$ip_array[$ip]-=1;
 	    			return;
 	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]<=1){
+	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
+	    			try{
+	    				$redis->hDel('routes',$value);
+	    				$dips=hGet('routes_ips',$value);	
+	    				if($dips==false||$ips==null){
+				    		return;
+				    	}
+	    				$dips=explode(',', $dips);
+	    				if(count($dips)<=0){
+				    		return;
+				    	}
+				    	if(!in_array($ip, $dips)){
+					    	return;
+					    }
+					    $ip_key=array_search($connection->msg['ip'],$dips);
+				    	if($ip_key!==false){
+				    		//删除ip组中的此ip
+				    		unset($dips[$ip_key]);
+				    	}
+				    	if($ips!=null){
+				    		$redis->hSet('routes_ips',$value,implode(',', $dips));
+				    	}else{
+				    		$redis->hDel('routes_ips',$value);
+				    	}
+	    			}catch(\Exception $e){
+	    				var_dump($e);
+	    			}
+	    		}
 	    		unset($ip_array[$ip]);
 	    	}
 	    	/*$ready_count=0;
@@ -105,7 +135,7 @@
 	    		if($con->msg['ip']==$ip) $ready_count+=1;
 	    	}
 	    	if($ready_count>1) return;*/
-	    	$ips=$redis->hGet('routes_ips',$route_msg['route']);
+	    	/*$ips=$redis->hGet('routes_ips',$route_msg['route']);
 		    	if($ips==false||$ips==null){
 		    		return;
 		    	}
@@ -115,14 +145,14 @@
 		    	}
 			    if(!in_array($ip, $ips)){
 			    	return;
-			    }
+			    }*/
 			    //处理routes的人数
 		    	if($route_num>1){
 		    		$redis->hSet('routes',$route_msg['route'],$route_num-1);
 		    	}else{
 		    		$redis->hDel('routes',$route_msg['route']);
 		    	}
-	    	$ip_key=array_search($connection->msg['ip'],$ips);
+	    	/*$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!==false){
 	    		//删除ip组中的此ip
 	    		unset($ips[$ip_key]);
@@ -131,7 +161,7 @@
 	    		$redis->hSet('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
 	    		$redis->hDel('routes_ips',$route_msg['route']);
-	    	}
+	    	}*/
 	    	var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
