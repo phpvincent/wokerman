@@ -126,7 +126,7 @@
 				    		//删除ip组中的此ip
 				    		unset($dips[$ip_key]);
 				    	}
-				    	if($ips!=null){
+				    	if($dips!=null){
 				    		$redis->hSet('routes_ips',$value,implode(',', $dips));
 				    	}else{
 				    		$redis->hDel('routes_ips',$value);
