@@ -42,12 +42,16 @@
 	    {	
 	    	global $redis;
 	    	$data=json_decode($data,true);
+	    	if(isset($data['heartbeat'])){
+	    		return;
+	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
 	    		$connection->send(ws_return('route or ip_info not found',1));
 	    		return;
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
+	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
 	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
@@ -70,7 +74,7 @@
 	        	} 	        
 	        }
 	        $ip_info=$data['ip_info'];
-	        $redis->hSet('route_ip_msg',$connection->msg['ip'],$ip_info);
+	        $redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	        $connection->send( ws_return('connect_success',0));
 	        return;
 	    }
@@ -79,6 +83,7 @@
 	 	function route_on_close($connection)
 	    {
 	    	global $redis,$ip_array,$route_connections;
+	    	var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	$ip=$route_msg['ip'];
 	    	//删除ip——连接数租中的此连接
@@ -127,6 +132,7 @@
 	    	}else{
 	    		$redis->hDel('routes_ips',$route_msg['route']);
 	    	}
+	    	var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
