@@ -52,7 +52,11 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        $ip_array['ip']['route'][]=$route;var_dump($ip_array);
+	        if(isset($ip_array[$connection->msg['ip']]['route'])){
+	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
+	        		$ip_array[$connection->msg['ip']]['route'][]=$route;
+	        	}
+	        }
 	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
