@@ -13,7 +13,7 @@
 	    	$notice_woker=new Workerman\Worker('websocket://0.0.0.0:2350');
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
-	    		var_dump($con->id.'connection');
+//	    		var_dump($con->id.'connection');
 	    		$con->send('hello');
 	    	};
 	    	$notice_woker->listen();
@@ -23,16 +23,15 @@
 	 	function route_on_connect($connection)
 	    {
 	    	//初始化附带信息
-	    	$con_msg=route_msg_start();
 	        $ip=$connection->getRemoteIp();
 	        global $route_connections,$ip_array;
 	        $connection->msg=['ip'=>$ip];
 	        $route_connections[$ip][$connection->id]=$connection;
 	        //记录ip与对应线程数
 	        if(!isset($ip_array[$ip])){
-	        	$ip_array[$ip]=1;
+	        	$ip_array[$ip]['num']=1;
 	        }else{
-	        	$ip_array[$ip]+=1;
+	        	$ip_array[$ip]['num']+=1;
 	        }
 	        echo 'ip:'.$ip."/n";
 	    }
@@ -40,9 +39,10 @@
     if (!function_exists("route_on_message")) {
 	 	function route_on_message($connection,$data)
 	    {	
-	    	global $redis;
+	    	global $redis,$ip_array;
 	    	$data=json_decode($data,true);
 	    	if(isset($data['heartbeat'])){
+	    		$connection->send( ws_return('heartbeat success',0));
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
@@ -51,7 +51,14 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        var_dump('m'.$connection->msg['route']);
+	        if(isset($ip_array[$connection->msg['ip']]['route'])){
+	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
+	        		$ip_array[$connection->msg['ip']]['route'][]=$route;
+	        	}
+	        }else{
+	        	$ip_array[$connection->msg['ip']]['route'][]=$route;
+	        }
+//	        var_dump('m'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
 	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
@@ -83,7 +90,7 @@
 	 	function route_on_close($connection)
 	    {
 	    	global $redis,$ip_array,$route_connections;
-	    	var_dump($connection->msg);
+//	    	var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	$ip=$route_msg['ip'];
 	    	//删除ip——连接数租中的此连接
@@ -93,11 +100,40 @@
 		    		return;
 		    	}
 	    	
-	    	if(isset($ip_array[$ip])&&$ip_array[$ip]>1){
+	    	if(isset($ip_array[$ip]['num'])&&$ip_array[$ip]['num']>1){
 	    		//当前ip下还有其它进程在连接，停止删除数据
-	    			$ip_array[$ip]-=1;
+	    			$ip_array[$ip]['num']-=1;
 	    			return;
-	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]<=1){
+	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1){
+//	    		var_dump($ip_array[$ip]);
+	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
+	    			try{
+	    				$redis->hDel('routes',$value);
+	    				$dips=$redis->hGet('routes_ips',$value);	
+	    				if($dips==false||$dips==null){
+				    		return;
+				    	}
+	    				$dips=explode(',', $dips);
+	    				if(count($dips)<=0){
+				    		return;
+				    	}
+				    	if(!in_array($ip, $dips)){
+					    	return;
+					    }
+					    $ip_key=array_search($connection->msg['ip'],$dips);
+				    	if($ip_key!==false){
+				    		//删除ip组中的此ip
+				    		unset($dips[$ip_key]);
+				    	}
+				    	if($dips!=null){
+				    		$redis->hSet('routes_ips',$value,implode(',', $dips));
+				    	}else{
+				    		$redis->hDel('routes_ips',$value);
+				    	}
+	    			}catch(\Exception $e){
+	    				var_dump($e);
+	    			}
+	    		}
 	    		unset($ip_array[$ip]);
 	    	}
 	    	/*$ready_count=0;
@@ -105,7 +141,7 @@
 	    		if($con->msg['ip']==$ip) $ready_count+=1;
 	    	}
 	    	if($ready_count>1) return;*/
-	    	$ips=$redis->hGet('routes_ips',$route_msg['route']);
+	    	/*$ips=$redis->hGet('routes_ips',$route_msg['route']);
 		    	if($ips==false||$ips==null){
 		    		return;
 		    	}
@@ -115,14 +151,14 @@
 		    	}
 			    if(!in_array($ip, $ips)){
 			    	return;
-			    }
+			    }*/
 			    //处理routes的人数
 		    	if($route_num>1){
 		    		$redis->hSet('routes',$route_msg['route'],$route_num-1);
 		    	}else{
 		    		$redis->hDel('routes',$route_msg['route']);
 		    	}
-	    	$ip_key=array_search($connection->msg['ip'],$ips);
+	    	/*$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!==false){
 	    		//删除ip组中的此ip
 	    		unset($ips[$ip_key]);
@@ -131,8 +167,8 @@
 	    		$redis->hSet('routes_ips',$route_msg['route'],implode(',', $ips));
 	    	}else{
 	    		$redis->hDel('routes_ips',$route_msg['route']);
-	    	}
-	    	var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
+	    	}*/
+	    	//var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
 	    	echo 'del'.json_encode($route_msg)."/n";
 	    }
@@ -143,9 +179,9 @@
 	 * @status 返回状态码（0为成功）
 	 */
 	if (!function_exists("ws_return")) {
-	 	function ws_return($msg,$status=0)
+	 	function ws_return($msg,$status=0,$data=[])
 	    {
-	    	return json_encode(['msg'=>$msg,'status'=>$status]);
+	    	return json_encode(['msg'=>$msg,'status'=>$status,'data'=>$data]);
 	    }
 	}
 	if (!function_exists("route_msg_start")) {
@@ -154,26 +190,32 @@
 	    	return ['ip'=>'','route'=>''];
 	    }
 	}
-	if (!function_exists("notice_onmessage")) {
-	 	function notice_onmessage($con,$data)
-	    {
-	    	var_dump($data);
-	    	$data=json_decode($data,true);
-	    	var_dump($data);
-	    	global $route_connections;
-	    	if($data['type']!=0){
-	    		foreach($route_connections[$data['ip']] as $k => $v){
-		    		$v->send($data['msg']);
-		    	}
-		    	$con->send(json_encode(['msg'=>'已向'.$data['ip'].'发送通知','status'=>0]));
-	    	}else{
-	    		//广播通知
-	    		foreach($route_connections as $k => $v){
-	    			foreach($v as $key => $val){
-	    				$val->send($data['msg']);
-	    			}
-	    		}
-	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
-	    	}
-	    }
-	}
+
+	// 子进程接收消息
+    if (!function_exists("notice_onmessage")) {
+        function notice_onmessage($connection,$data)
+        {
+            $data=json_decode($data,true);
+            if(!isset($data['ip']) || !isset($data['type'])){
+                $connection->send(ws_return('ip or type not found',1));
+                return;
+            }
+            $ip=$data['ip']; //用户的IP
+            global $route_connections;
+            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
+                if(count($route_connections[$ip]) <= 1){
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $connect->send(ws_return('success',0,$data));
+                    }
+                }else{
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $url = $connect->msg['route'];
+                        if(preg_match("/\/pay/", $url)){
+                            $connect->send(ws_return('success',0,$data));
+                        }
+                    }
+                }
+
+            }
+        }
+    }
