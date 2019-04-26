@@ -13,7 +13,7 @@
 	    	$notice_woker=new Workerman\Worker('websocket://0.0.0.0:2350');
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
-	    		var_dump($con->id.'connection');
+	    		//var_dump($con->id.'connection');
 	    		$con->send('hello');
 	    	};
 	    	$notice_woker->listen();
@@ -74,7 +74,7 @@
 	        }else{
 	        	$ip_array[$connection->msg['ip']]['route'][]=$route;
 	        }
-	        var_dump('m'.$connection->msg['route']);
+	        var_dump('on message:'.$connection->msg['route']);
 	        if($redis->hGet('routes',$route)==null||$redis->hGet('routes',$route)==false){
 	        	$redis->hSet('routes',$route,1);
 	        	$redis->hSet('routes_ips',$route,$connection->msg['ip']);
@@ -106,7 +106,7 @@
 	 	function route_on_close($connection)
 	    {
 	    	global $redis,$ip_array,$route_connections;
-	    	var_dump($connection->msg);
+	    	//var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	if(!isset($connection->msg)||!isset($route_msg['ip'])){
 	    		return;
@@ -128,13 +128,15 @@
 	    			$ip_array[$ip]['num']-=1;
 	    			return;
 	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1){
-	    		var_dump($ip_array[$ip]);
+	    		var_dump('all_ip left.'.$ip_array[$ip]);
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
 	    				//$redis->hDel('routes',$value);
 	    				if($redis->hGet('routes',$value)>1){
+	    					var_dump('all ip left,route:'.$value.'num -1');
 	    					$redis->hSet('routes',$value,$redis->hGet('routes',$value)-1);
 	    				}else{
+	    					var_dump('all ip left,route:'.$value.'del');
 	    					$redis->hDel('routes',$value);
 	    				}
 	    				$dips=$redis->hGet('routes_ips',$value);	
@@ -204,7 +206,7 @@
 	    	}*/
 	    	//var_dump($redis->hGet('route_ip_msg',$connection->msg['ip']));
 	    	$redis->hDel('route_ip_msg',$connection->msg['ip']);
-	    	echo 'del'.json_encode($route_msg)."/n";
+	    	//echo 'del'.json_encode($route_msg)."/n";
 	    }
 	}
 	/**
