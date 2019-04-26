@@ -302,7 +302,7 @@
 	    	global $notice_woker;
 	    	foreach($notice_woker->connections as $k => $con)
 	    	{
-	    		$con->send(ws_return('notice',0,json_encode(['type'=>$type,'msg'=>$msg])));
+	    		$con->send(json_encode(['msg_type'=>'notice','code'=>0,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
 	    }
 	}
