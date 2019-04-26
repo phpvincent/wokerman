@@ -108,13 +108,20 @@
 	    	global $redis,$ip_array,$route_connections;
 	    	var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
+	    	if(!isset($connection->msg)||!isset($route_msg['ip'])){
+	    		return;
+	    	}
 	    	$ip=$route_msg['ip'];
-	    	//删除ip——连接数租中的此连接
+	    	//从链接映射池里删除此链接
 	    	unset($route_connections[$ip][$connection->id]);
-	    	$route_num=$redis->hGet('routes',$route_msg['route']);
-		    	if($route_num<=0){
-		    		return;
-		    	}
+	    	//当$route['route']不存在时 代表没有通讯基础数据
+	    	if(isset($route_msg['route'])){
+	    		//删除ip——连接数租中的此连接
+		    	$route_num=$redis->hGet('routes',$route_msg['route']);
+			    	if($route_num<=0){
+			    		return;
+			    	}
+	    	}
 	    	
 	    	if(isset($ip_array[$ip]['num'])&&$ip_array[$ip]['num']>1){
 	    		//当前ip下还有其它进程在连接，停止删除数据
@@ -124,7 +131,12 @@
 	    		var_dump($ip_array[$ip]);
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
-	    				$redis->hDel('routes',$value);
+	    				//$redis->hDel('routes',$value);
+	    				if($redis->hGet('routes',$value)>1){
+	    					$redis->hSet('routes',$value,$redis->hGet('routes',$value)-1);
+	    				}else{
+	    					$redis->hDet('routes',$value);
+	    				}
 	    				$dips=$redis->hGet('routes_ips',$value);	
 	    				if($dips==false||$dips==null){
 				    		return;
@@ -151,6 +163,12 @@
 	    			}
 	    		}
 	    		unset($ip_array[$ip]);
+	    	}else{
+	    		if(isset($route_num)&&$route_num>1){
+		    		$redis->hSet('routes',$route_msg['route'],$route_num-1);
+		    	}else{
+		    		$redis->hDel('routes',$route_msg['route']);
+		    	}
 	    	}
 	    	/*$ready_count=0;
 	    	foreach($connection->worker->connections as $con){
@@ -169,11 +187,11 @@
 			    	return;
 			    }*/
 			    //处理routes的人数
-		    	if($route_num>1){
+		    	/*if($route_num>1){
 		    		$redis->hSet('routes',$route_msg['route'],$route_num-1);
 		    	}else{
 		    		$redis->hDel('routes',$route_msg['route']);
-		    	}
+		    	}*/
 	    	/*$ip_key=array_search($connection->msg['ip'],$ips);
 	    	if($ip_key!==false){
 	    		//删除ip组中的此ip
