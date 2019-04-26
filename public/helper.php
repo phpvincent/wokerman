@@ -74,7 +74,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        call_server(0,call_arr(['msg'=>'访问页面','ip'=>$ip,'route'=>$route]));
+	        call_server(0,call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
 	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
