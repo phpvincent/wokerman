@@ -300,7 +300,7 @@
 	 	function call_server($type,$msg,$route=null)
 	    {
 	    	global $notice_woker;
-	    	foreach($notice_woker as $k => $con)
+	    	foreach($notice_woker->connections as $k => $con)
 	    	{
 	    		$con->send(ws_return('notice',0,json_encode(['type'=>$type,'msg'=>$msg])));
 	    	}
