@@ -126,7 +126,7 @@
 	    	//当$route['route']不存在时 代表没有通讯基础数据
 	    	if(isset($route_msg['route'])){
 	    		if(isset($connection->con_time)){
-	    			$stay_time=strtotime($connection->con_time)-time();
+	    			$stay_time=time()-strtotime($connection->con_time);
 	    		}else{
 	    			$stay_time=null;
 	    		}
