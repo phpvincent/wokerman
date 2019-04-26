@@ -135,7 +135,7 @@
 	    				if($redis->hGet('routes',$value)>1){
 	    					$redis->hSet('routes',$value,$redis->hGet('routes',$value)-1);
 	    				}else{
-	    					$redis->hDet('routes',$value);
+	    					$redis->hDel('routes',$value);
 	    				}
 	    				$dips=$redis->hGet('routes_ips',$value);	
 	    				if($dips==false||$dips==null){
