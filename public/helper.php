@@ -4,7 +4,7 @@
 	    {
             require __DIR__."/redis.php";
             //初始化附带信息
-	    	global $redis,$ip_array;
+	    	global $redis,$ip_array,$notice_woker;
 	    	$ip_array=[];
             $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
             $redis = Rediss::getInstance($config);
@@ -27,6 +27,7 @@
 	        $ip=$connection->getRemoteIp();
 	        global $route_connections,$ip_array;
 	        $connection->msg=['ip'=>$ip];
+	        $connection->con_time=date("Y-m-d H:i:s",time());
 	        $route_connections[$ip][$connection->id]=$connection;
 	        //记录ip与对应线程数
 	        if(!isset($ip_array[$ip])){
@@ -34,6 +35,7 @@
 	        }else{
 	        	$ip_array[$ip]['num']+=1;
 	        }
+	        call_server(0,call_arr(['msg'=>'路由访问','ip'=>$ip]));
 	        echo 'ip:'.$ip."/n";
 	    }
 	}
@@ -60,6 +62,11 @@
 	    				$connection->send(ws_return('ip_msg save success',0));
 	    			    return;
 	    			}
+	    			if(isset($connection->msg['route'])){
+	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
+	    			}else{
+	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg']]));
+	    			}
 	    		}else{
 	    			$connection->send(ws_return('route or ip_info not found',1));
 	    			return;
@@ -67,7 +74,9 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
+	        call_server(0,call_arr(['msg'=>'访问页面','ip'=>$ip,'route'=>$route]));
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
+	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
 	        		$ip_array[$connection->msg['ip']]['route'][]=$route;
 	        	}
@@ -116,6 +125,12 @@
 	    	unset($route_connections[$ip][$connection->id]);
 	    	//当$route['route']不存在时 代表没有通讯基础数据
 	    	if(isset($route_msg['route'])){
+	    		if(isset($connection->con_time)){
+	    			$stay_time=strtotime($connection->con_time)-time();
+	    		}else{
+	    			$stay_time=null;
+	    		}
+	    		call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
 			    	if($route_num<=0){
@@ -277,3 +292,28 @@
             }
         }
     }
+    //客户端传送数据至服务端
+    //type:0:页面访问
+    //1:数据输入操作
+    //2：。。。
+    if (!function_exists("call_server")) {
+	 	function call_server($type,$msg,$route=null)
+	    {
+	    	global $notice_woker;
+	    	foreach($notice_woker as $k => $con)
+	    	{
+	    		$con->send(ws_return('notice',0,json_encode(['type'=>$type,'msg'=>$msg])));
+	    	}
+	    }
+	}
+	 if (!function_exists("call_arr")) {
+	 	function call_arr($ary)
+	    {
+	    	$arr=['msg'=>null,
+	    		  'ip'=>null,
+	    		  'time'=>date("Y-m-d H:i:s",time()),
+	    		  'route'=>null
+	    		 ];
+	    	return array_merge($arr,$ary);
+	    }
+	}
