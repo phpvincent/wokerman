@@ -224,7 +224,7 @@
 	    	return ['ip'=>'','route'=>''];
 	    }
 	}
-	if (!function_exists("notice_onmessage")) {
+	/*if (!function_exists("notice_onmessage")) {
 	 	function notice_onmessage($con,$data)
 	    {
 	    	var_dump($data);
@@ -246,4 +246,32 @@
 	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
 	    	}
 	    }
-	}
+	}*/
+	// 子进程接收消息
+    if (!function_exists("notice_onmessage")) {
+        function notice_onmessage($connection,$data)
+        {
+            $data=json_decode($data,true);
+            if(!isset($data['ip']) || !isset($data['type'])){
+                $connection->send(ws_return('ip or type not found',1));
+                return;
+            }
+            $ip=$data['ip']; //用户的IP
+            global $route_connections;
+            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
+                if(count($route_connections[$ip]) <= 1){
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $connect->send(ws_return('success',0,$data));
+                    }
+                }else{
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $url = $connect->msg['route'];
+                        if(preg_match("/\/pay/", $url)){
+                            $connect->send(ws_return('success',0,$data));
+                        }
+                    }
+                }
+
+            }
+        }
+    }
