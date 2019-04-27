@@ -14,7 +14,7 @@
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
 //	    		var_dump($con->id.'connection');
-	    		$con->send('hello');
+	    		// $con->send('hello');
 	    	};
 	    	$notice_woker->listen();
 	    }
@@ -27,6 +27,7 @@
 	        global $route_connections,$ip_array;
 	        $connection->msg=['ip'=>$ip];
 	        $route_connections[$ip][$connection->id]=$connection;
+	        var_dump($connection);
 	        //记录ip与对应线程数
 	        if(!isset($ip_array[$ip])){
 	        	$ip_array[$ip]['num']=1;
@@ -202,6 +203,8 @@
             }
             $ip=$data['ip']; //用户的IP
             global $route_connections;
+            var_dump($route_connections);
+            $connection->send(ws_return('success',0,$data));
             if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
                 if(count($route_connections[$ip]) <= 1){
                     foreach ($route_connections[$ip] as $key => $connect){
