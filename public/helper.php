@@ -130,6 +130,25 @@
 	    		}else{
 	    			$stay_time=null;
 	    		}
+
+	    		//计算页面平均在线时长
+	    		if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
+                    $today_time = $redis->hGet('today_time',$route_msg['route']);
+                    $url = json_decode($today_time,true);
+                    if($url['date'] == date('Y-m-d')){
+                        $url_data['count'] = $url['count'] + 1;
+                        $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
+                        $url_data['date'] = $url['date'];
+                    }else{
+                        $url_data['count'] = 1;
+                        $url_data['time'] =  $stay_time;
+                        $url_data['date'] = date('Y-m-d');
+                    }
+                    $redis->hSet('today_time',$route_msg['route'],json_encode($url_data));
+                }else{
+                    $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d')]);
+                    $redis->hSet('today_time',$route_msg['route'],$url);
+                }
 	    		call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
