@@ -114,7 +114,8 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
-	    	global $redis,$ip_array,$route_connections;
+            date_default_timezone_set('PRC');
+            global $redis,$ip_array,$route_connections;
 	    	//var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	if(!isset($connection->msg)||!isset($route_msg['ip'])){
@@ -135,18 +136,12 @@
 	    		if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
                     $today_time = $redis->hGet('today_time',$route_msg['route']);
                     $url = json_decode($today_time,true);
-                    if($url['date'] == date('Y-m-d')){
-                        $url_data['count'] = $url['count'] + 1;
-                        $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
-                        $url_data['date'] = $url['date'];
-                    }else{
-                        $url_data['count'] = 1;
-                        $url_data['time'] =  $stay_time;
-                        $url_data['date'] = date('Y-m-d');
-                    }
+                    $url_data['count'] = $url['count'] + 1;
+                    $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
+                    $url_data['date'] = date('Y-m-d H:i:s');
                     $redis->hSet('today_time',$route_msg['route'],json_encode($url_data));
                 }else{
-                    $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d')]);
+                    $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
                     $redis->hSet('today_time',$route_msg['route'],$url);
                 }
 	    		call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
