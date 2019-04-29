@@ -114,7 +114,6 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
-            date_default_timezone_set('PRC');
             global $redis,$ip_array,$route_connections;
 	    	//var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
@@ -244,9 +243,9 @@
 	 * @status 返回状态码（0为成功）
 	 */
 	if (!function_exists("ws_return")) {
-	 	function ws_return($msg,$status=0)
+	 	function ws_return($msg,$status=0,$data=[])
 	    {
-	    	return json_encode(['msg'=>$msg,'status'=>$status]);
+	    	return json_encode(['msg'=>$msg,'status'=>$status,'data'=>$data]);
 	    }
 	}
 	if (!function_exists("route_msg_start")) {
