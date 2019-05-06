@@ -4,10 +4,12 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
+	private $redis;
 	public static function server_send(Array $data,$con,$redis)
 	{
 		reset($data);
-
+		$key=key($data);
+		self::$redis=$redis;
 		if(isset($data['ip_msg'])){
 			self::ip_msg_call($data,$con);
 		}else{
