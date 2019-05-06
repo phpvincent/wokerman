@@ -2,7 +2,8 @@
 	if (!function_exists("route_on_start")) {
 	 	function route_on_start($woker)
 	    {
-            require __DIR__."/redis.php";
+            require_once __DIR__."/redis.php";
+            require_once __DIR__."/server_call.php";
             //初始化附带信息
 	    	global $redis,$ip_array,$notice_woker;
 	    	$ip_array=[];
@@ -49,7 +50,15 @@
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
-	    		if(isset($data['ip_msg'])){
+	    		$call_msg=server_call::server_send($data,$connection);
+	    		if(!$call_msg){
+	    			echo 'server_call failed';
+	    		}else{
+	    			echo 'server_call success';
+	    		}
+	    		return;
+	    		/*if(isset($data['ip_msg'])){
+
 	    			//用户联系方式存储
 	    			$ip_info=$redis->hGet('route_ip_msg',$connection->msg['ip']);
 	    			if($ip_info==false){
@@ -70,7 +79,7 @@
 	    		}else{
 	    			$connection->send(ws_return('route or ip_info not found',1));
 	    			return;
-	    		}
+	    		}*/
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
