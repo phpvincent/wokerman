@@ -5,11 +5,13 @@ require_once './helper.php';
 	 */
 class ServerCall{
 	private $redis;
+	private $con;
 	public static function server_send(Array $data,$con,$redis)
 	{
 		reset($data);
 		$key=key($data);
 		self::$redis=$redis;
+		self::$con=$con;
 		if(isset($data['ip_msg'])){
 			self::ip_msg_call($data,$con);
 		}else{
@@ -18,8 +20,10 @@ class ServerCall{
 		}
 	}
 
-	private static function ip_msg_call($data,$con,$redis)
+	private static function ip_msg_call($data)
 	{
+		$redis=self::$redis;
+		$con=self::$con;
 		//用户联系方式存储
 		$ip_info=$redis->hGet('route_ip_msg',$connection->msg['ip']);
 		if($ip_info==false){
