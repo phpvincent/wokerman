@@ -60,9 +60,9 @@
 	    				$ip_info['ip_msg']=$data['ip_msg'];
 	    				$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	    				if(isset($connection->msg['route'])){
-	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
+	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
 		    			}else{
-		    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg']]));
+		    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg']]));
 		    			}
 	    				$connection->send(ws_return('ip_msg save success',0));
 	    			    return;
@@ -245,6 +245,7 @@
 	if (!function_exists("ws_return")) {
 	 	function ws_return($msg,$status=0,$data=[])
 	    {
+	    	var_dump($data);
 	    	return json_encode(['msg'=>$msg,'status'=>$status,'data'=>$data]);
 	    }
 	}
