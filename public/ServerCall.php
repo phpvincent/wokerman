@@ -4,8 +4,8 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
-	private $redis;
-	private $con;
+	private static $redis;
+	private static $con;
 	public static function server_send(Array $data,$con,$redis)
 	{
 		reset($data);
