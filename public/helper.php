@@ -3,7 +3,7 @@
 	 	function route_on_start($woker)
 	    {
             require_once __DIR__."/redis.php";
-            require_once __DIR__."/server_call.php";
+            require_once __DIR__."/ServerCall.php";
             //初始化附带信息
 	    	global $redis,$ip_array,$notice_woker;
 	    	$ip_array=[];

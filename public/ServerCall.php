@@ -3,7 +3,7 @@ require_once './helper.php';
 	/**
 	 * 服务端通讯
 	 */
-class server_call{
+class ServerCall{
 	public static function server_send(Array $data,$con)
 	{
 		if(isset($data['ip_msg'])){
