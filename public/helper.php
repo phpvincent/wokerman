@@ -297,8 +297,12 @@
                 }else{
                     foreach ($route_connections[$ip] as $key => $connect){
                         $url = $connect->msg['route'];
-                        if(preg_match("/\/pay/", $url)){
+                        if($data['type'] == 0){
                             $connect->send(ws_return('success',0,$data));
+                        }else{
+                            if(preg_match("/\/pay/", $url)){
+                                $connect->send(ws_return('success',0,$data));
+                            }
                         }
                     }
                 }
