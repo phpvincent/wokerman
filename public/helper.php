@@ -14,7 +14,7 @@
 	    	$notice_woker->onMessage='notice_onmessage';
 	    	$notice_woker->onConnect=function($con){
 	    		//var_dump($con->id.'connection');
-	    		$con->send('collect success');
+	    		$con->send('hello');
 	    	};
 	    	$notice_woker->listen();
 	    }
@@ -35,7 +35,7 @@
 	        }else{
 	        	$ip_array[$ip]['num']+=1;
 	        }
-	        call_server(0,call_arr(['msg'=>'访问请求...','ip'=>$ip]));
+	        call_server(0,call_arr(['msg'=>'路由访问','ip'=>$ip]));
 	        echo 'ip:'.$ip."/n";
 	    }
 	}
@@ -58,16 +58,15 @@
 	    			}else{
 	    				$ip_info=json_decode($ip_info,true);
 	    				$ip_info['ip_msg']=$data['ip_msg'];
+	    				$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	    				if(isset($connection->msg['route'])){
-	    					call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
+	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
 		    			}else{
 		    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$ip,'ip_msg'=>$data['ip_msg']]));
 		    			}
-	    				$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	    				$connection->send(ws_return('ip_msg save success',0));
 	    			    return;
 	    			}
-	    			
 	    		}else{
 	    			$connection->send(ws_return('route or ip_info not found',1));
 	    			return;
@@ -75,7 +74,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        call_server(0,call_arr(['msg'=>'进入页面','ip'=>$connection->msg['ip'],'route'=>$route]));
+	        call_server(0,call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
 	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
@@ -115,7 +114,7 @@
 	if (!function_exists("route_on_close")) {
 	 	function route_on_close($connection)
 	    {
-	    	global $redis,$ip_array,$route_connections;
+            global $redis,$ip_array,$route_connections;
 	    	//var_dump($connection->msg);
 	    	$route_msg=$connection->msg;
 	    	if(!isset($connection->msg)||!isset($route_msg['ip'])){
@@ -131,6 +130,19 @@
 	    		}else{
 	    			$stay_time=null;
 	    		}
+
+	    		//计算页面平均在线时长
+	    		if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
+                    $today_time = $redis->hGet('today_time',$route_msg['route']);
+                    $url = json_decode($today_time,true);
+                    $url_data['count'] = $url['count'] + 1;
+                    $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
+                    $url_data['date'] = date('Y-m-d H:i:s');
+                    $redis->hSet('today_time',$route_msg['route'],json_encode($url_data));
+                }else{
+                    $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
+                    $redis->hSet('today_time',$route_msg['route'],$url);
+                }
 	    		call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
@@ -231,9 +243,9 @@
 	 * @status 返回状态码（0为成功）
 	 */
 	if (!function_exists("ws_return")) {
-	 	function ws_return($msg,$status=0)
+	 	function ws_return($msg,$status=0,$data=[])
 	    {
-	    	return json_encode(['msg'=>$msg,'status'=>$status]);
+	    	return json_encode(['msg'=>$msg,'status'=>$status,'data'=>$data]);
 	    }
 	}
 	if (!function_exists("route_msg_start")) {
