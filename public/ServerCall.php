@@ -26,7 +26,7 @@ class ServerCall{
 			$ip_info['ip_msg']=$data['ip_msg'];
 			$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 			if(isset($connection->msg['route'])){
-			call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time()]));
+			call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time())]));
 			}else{
 				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'time'=>date("Y-m-d H:i:s",time()]));
 			}
