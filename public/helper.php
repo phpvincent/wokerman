@@ -36,7 +36,7 @@
 	        }else{
 	        	$ip_array[$ip]['num']+=1;
 	        }
-	        call_server(0,call_arr(['msg'=>'路由访问','ip'=>$ip]));
+	        ServerCall::call_server(0,call_arr(['msg'=>'路由访问','ip'=>$ip]));
 	        echo 'ip:'.$ip."/n";
 	    }
 	}
@@ -51,6 +51,7 @@
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
 	    		$call_msg=ServerCall::server_send($data,$connection,$redis);
+	    		var_dump($call_msg);
 	    		if(!$call_msg){
 	    			echo 'server_call failed';
 	    		}else{
@@ -83,7 +84,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        call_server(0,call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
+	        ServerCall::call_server(0,call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
 	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
@@ -152,7 +153,7 @@
                     $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
                     $redis->hSet('today_time',$route_msg['route'],$url);
                 }
-	    		call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
+	    		ServerCall::call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
 			    	if($route_num<=0){
@@ -325,7 +326,7 @@
     //2：。。。
     if (!function_exists("call_server")) {
 	 	function call_server($type,$msg,$route=null)
-	    {
+	    {	var_dump($msg);
 	    	global $notice_woker;
 	    	foreach($notice_woker->connections as $k => $con)
 	    	{
