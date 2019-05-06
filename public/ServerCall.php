@@ -4,21 +4,27 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
+	private static $config_arr=['ip_msg'=>'ip_msg_call'];
 	private static $redis;
 	private static $con;
 	public static function server_send(Array $data,$con,$redis)
 	{
 		reset($data);
 		$key=key($data);
+		if(!isset(self::$config_arr[$key])){
+			return false;
+		}
 		var_dump(self::$redis);
 		self::$redis=$redis;
 		self::$con=$con;
-		if(isset($data['ip_msg'])){
+		$fun_name=self::$config_arr[$key];
+		return self::$fun_name($data,$con);
+		/*if(isset($data['ip_msg'])){
 			return self::ip_msg_call($data,$con);
 		}else{
 			$connection->send(ws_return('route or ip_info not found',1));
 	    	return false;
-		}
+		}*/
 	}
 	/**
 	 * 存储用户联系方式
