@@ -4,8 +4,10 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
-	public static function server_send(Array $data,$con)
+	public static function server_send(Array $data,$con,$redis)
 	{
+		reset($data);
+
 		if(isset($data['ip_msg'])){
 			self::ip_msg_call($data,$con);
 		}else{
@@ -14,7 +16,7 @@ class ServerCall{
 		}
 	}
 
-	private static function ip_msg_call($data,$con)
+	private static function ip_msg_call($data,$con,$redis)
 	{
 		//用户联系方式存储
 		$ip_info=$redis->hGet('route_ip_msg',$connection->msg['ip']);

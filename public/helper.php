@@ -50,7 +50,7 @@
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
-	    		$call_msg=server_call::server_send($data,$connection);
+	    		$call_msg=ServerCall::server_send($data,$connection,$redis);
 	    		if(!$call_msg){
 	    			echo 'server_call failed';
 	    		}else{
