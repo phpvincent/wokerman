@@ -50,6 +50,7 @@
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
+	    		//时间捉取处理
 	    		$call_msg=ServerCall::server_send($data,$connection,$redis);
 	    		var_dump($call_msg);
 	    		if(!$call_msg){

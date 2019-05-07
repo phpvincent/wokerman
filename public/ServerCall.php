@@ -18,7 +18,11 @@ class ServerCall{
 		self::$redis=$redis;
 		self::$con=$con;
 		$fun_name=self::$config_arr[$key];
-		return self::$fun_name($data,$con);
+		if(method_exists('ServerCall',$fun_name)){
+			return self::$fun_name($data,$con);
+		}else{
+			return false;
+		}
 		/*if(isset($data['ip_msg'])){
 			return self::ip_msg_call($data,$con);
 		}else{
@@ -45,20 +49,42 @@ class ServerCall{
 			$ip_info['ip_msg']=$data['ip_msg'];
 			$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 			if(isset($connection->msg['route'])){
-			self::call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time())]));
+			self::call_event(1,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time())]));
 			}else{
-				self::call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'time'=>date("Y-m-d H:i:s",time())]));
+				self::call_event(1,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'time'=>date("Y-m-d H:i:s",time())]));
 			}
 			$connection->send(ws_return('ip_msg save success',0));
 		    return true;
 		}
 	}
+	/**
+	 * 通讯系统端监控台通知消息
+	 * @param  [string] 类型  [description]
+	 * @param  [json] 数据   [description]
+	 * @param  [string] $route [路由]
+	 * @return [type]        [description]
+	 */
 	public static function call_server($type,$msg,$route=null)
 	    {	var_dump($msg);
 	    	global $notice_woker;
 	    	foreach($notice_woker->connections as $k => $con)
 	    	{
-	    		$con->send(json_encode(['msg_type'=>'notice','code'=>0,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
+	    		$con->send(json_encode(['msg_type'=>'notice','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
 	    }
+	/**
+	 * 通讯系统服务台事件触发
+	 * @param  [type] $type  [description]
+	 * @param  [type] $msg   [description]
+	 * @param  [type] $route [description]
+	 * @return [type]        [description]
+	 */
+	public static function call_event($type,$msg,$route=null)
+	{		var_dump($msg);
+			global $notice_woker;
+	   	 	foreach($notice_woker->connections as $k => $con)
+	    	{
+	    		$con->send(json_encode(['msg_type'=>'event','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
+	    	}
+	}
 }
