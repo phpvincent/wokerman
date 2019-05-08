@@ -363,9 +363,14 @@
 	    		$con->send($check);
 	    		return;
 	    	} 
+	    	if(!isset($_POST['type'])||!isset($_POST['msg'])) $con->send(ws_return('type or ip not found',-2));
 	    	$type=$_POST['type'];
 	    	$msg=$_POST['msg'];
 	    	$ip=isset($_POST['ip']) ? isset($_POST['ip']): null;
+	    	//推送业务
+
+
+	    	//响应请求
 	    	$con->send(ws_return('success'));
 	    }
 	}
@@ -373,20 +378,21 @@
 	 	function auth_check(\Rediss $redis,$get)
 	    {
 	    	if(!isset($_POST['auth_name'])||!isset($_POST['auth_pass'])){
-	    		return json_encode(['msg'=>'auth message not found','code'=>0]);
+	    		return ws_return('auth message not found',-1);
 	    	}
 	    	$pass=$redis->get($_POST['auth_name']);
-	    	if($pass==false||$_POST['auth_pass']!=$pass){var_dump($pass,$_POST);
-	    		return json_encode(['msg'=>'auth undifined','code'=>0]);
+	    	if($pass==false||$_POST['auth_pass']!=$pass){
+	    		var_dump($pass,$_POST);
+	    		return ws_return('auth undifined',-1);
 	    	}elseif($pass!=false&&$_POST['auth_pass']!=$pass)
 	    	{
 	    		$redis->del($_POST['auth_name']);
-	    		return json_encode(['msg'=>'auth check false','code'=>0]);
+	    		return ws_return('auth check false',-1);
 	    	}elseif($pass!=false&&$_POST['auth_pass']==$pass){
 	    		$redis->del($_POST['auth_name']);
 	    		return true;
 	    	}
 
-	    	return json_decode(['msg'=>'auth undifined','code'=>0]);
+	    	return ws_return('auth undifined',-1);
 	    }
 	}
