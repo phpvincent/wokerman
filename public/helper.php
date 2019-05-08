@@ -36,7 +36,7 @@
 	        }else{
 	        	$ip_array[$ip]['num']+=1;
 	        }
-	        ServerCall::call_server(0,call_arr(['msg'=>'路由访问','ip'=>$ip]));
+	        ServerCall::call_server(call_arr(['msg'=>'路由访问','ip'=>$ip]));
 	        echo 'ip:'.$ip."/n";
 	    }
 	}
@@ -50,6 +50,7 @@
 	    		return;
 	    	}
 	    	if(!isset($data['route'])||!isset($data['ip_info'])){
+	    		//时间捉取处理
 	    		$call_msg=ServerCall::server_send($data,$connection,$redis);
 	    		var_dump($call_msg);
 	    		if(!$call_msg){
@@ -70,9 +71,9 @@
 	    				$ip_info['ip_msg']=$data['ip_msg'];
 	    				$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 	    				if(isset($connection->msg['route'])){
-	    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
+	    				call_server(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route']]));
 		    			}else{
-		    				call_server(0,call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg']]));
+		    				call_server(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg']]));
 		    			}
 	    				$connection->send(ws_return('ip_msg save success',0));
 	    			    return;
@@ -84,7 +85,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        ServerCall::call_server(0,call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
+	        ServerCall::call_server(call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
 	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
@@ -153,7 +154,7 @@
                     $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
                     $redis->hSet('today_time',$route_msg['route'],$url);
                 }
-	    		ServerCall::call_server(0,call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
+	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
 			    	if($route_num<=0){
