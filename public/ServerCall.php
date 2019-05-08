@@ -64,14 +64,14 @@ class ServerCall{
 	 * @param  [string] $route [路由]
 	 * @return [type]        [description]
 	 */
-	public static function call_server($msg,$route=null)
+	public static function call_server($msg)
 	    {	
 	    	$type=0;
 	    	var_dump($msg);
-	    	global $notice_woker;
-	    	foreach($notice_woker->connections as $k => $con)
+	    	global $notice_worker;
+	    	foreach($notice_worker->connections as $k => $con)
 	    	{
-	    		$con->send(json_encode(['msg_type'=>'notice','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg,'route'=>$route])]));
+	    		$con->send(json_encode(['msg_type'=>'notice','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
 	    }
 	/**
@@ -81,27 +81,27 @@ class ServerCall{
 	 * @param  [type] $route [description]
 	 * @return [type]        [description]
 	 */
-	public static function call_event($msg,$route=null)
+	public static function call_event($msg)
 	{		
 			$type=1;
 			var_dump($msg);
-			global $notice_woker;
-	   	 	foreach($notice_woker->connections as $k => $con)
+			global $notice_worker;
+	   	 	foreach($notice_worker->connections as $k => $con)
 	    	{	
-	    		$con->send(json_encode(['msg_type'=>'event','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg,'route'=>$route])]));
+	    		$con->send(json_encode(['msg_type'=>'event','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
 	}
 	/**
 	 * 数据捉取
 	 */
-	public static function call_data($msg,$route=null)
+	public static function call_data($msg)
 	{		
 			$type=2;
 			var_dump($msg);
-			global $notice_woker;
-	   	 	foreach($notice_woker->connections as $k => $con)
+			global $notice_worker;
+	   	 	foreach($notice_worker->connections as $k => $con)
 	    	{
-	    		$con->send(json_encode(['msg_type'=>'data','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg,'route'=>$route])]));
+	    		$con->send(json_encode(['msg_type'=>'data','code'=>$type,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
 	}
 }
