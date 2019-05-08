@@ -5,19 +5,22 @@
             require_once __DIR__."/redis.php";
             require_once __DIR__."/ServerCall.php";
             //初始化附带信息
-	    	global $redis,$ip_array,$notice_woker;
+	    	global $redis,$ip_array,$notice_worker;
 	    	$ip_array=[];
             $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
             $redis = Rediss::getInstance($config);
 //	    	$redis=new \Redis();
 //	    	$redis->connect('13.250.109.37',6379);
-	    	$notice_woker=new Workerman\Worker('websocket://0.0.0.0:2350');
-	    	$notice_woker->onMessage='notice_onmessage';
-	    	$notice_woker->onConnect=function($con){
+	    	$notice_worker=new Workerman\Worker('websocket://0.0.0.0:2350');
+	    	$notice_worker->onMessage='notice_onmessage';
+	    	$notice_worker->onConnect=function($con){
 	    		//var_dump($con->id.'connection');
 	    		$con->send('hello');
 	    	};
-	    	$notice_woker->listen();
+	    	$notice_worker->listen();
+	    	$http_worker=new Workerman\Worker('http://0.0.0.0:2351');
+	    	$http_worker->onMessage='http_onmessage';
+	    	$http_worker->listen();
 	    }
 	}
 	if (!function_exists("route_on_connect")) {
@@ -332,11 +335,11 @@
     //type:0:页面访问
     //1:数据输入操作
     //2：。。。
-    if (!function_exists("call_server")) {
+  /*  if (!function_exists("call_server")) {
 	 	function call_server($type,$msg,$route=null)
 	    {	var_dump($msg);
-	    	global $notice_woker;
-	    	foreach($notice_woker->connections as $k => $con)
+	    	global $notice_worker;
+	    	foreach($notice_worker->connections as $k => $con)
 	    	{
 	    		$con->send(json_encode(['msg_type'=>'notice','code'=>0,'msg'=>json_encode(['type'=>$type,'msg'=>$msg])]));
 	    	}
@@ -351,5 +354,68 @@
 	    		  'route'=>null
 	    		 ];
 	    	return array_merge($arr,$ary);
+	    }
+	}*/
+	 if (!function_exists("http_onmessage")) {
+	 	function http_onmessage($con,$data)
+	    {
+	    	global $redis;
+	    	//var_dump($data);
+	    	var_dump($_POST);
+	    	//身份验证
+	    	$check=auth_check($redis,$_POST);
+	    	if($check!==true)
+	    	{
+	    		$con->send($check);
+	    		return;
+	    	} 
+	    	unset($_POST['auth_name'],$_POST['auth_pass']);
+	    	$data=$_POST;
+	    	if(!isset($data['ip']) || !isset($data['type'])){
+                $connection->send(ws_return('ip or type not found',1));
+                return;
+            }
+            $ip=$data['ip']; //用户的IP
+            global $route_connections;
+            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
+                if(count($route_connections[$ip]) <= 1){
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $connect->send(ws_return('success',0,$data));
+                    }
+                }else{
+                    foreach ($route_connections[$ip] as $key => $connect){
+                        $url = $connect->msg['route'];
+                        if($data['type'] == 0){
+                            $connect->send(ws_return('success',0,$data));
+                        }else{
+                            if(preg_match("/\/pay/", $url)){
+                                $connect->send(ws_return('success',0,$data));
+                            }
+                        }
+                    }
+                }
+
+            }
+
+	    }
+	}
+	if (!function_exists("auth_check")) {
+	 	function auth_check(\Rediss $redis,$get)
+	    {
+	    	if(!isset($_POST['auth_name'])||!isset($_POST['auth_pass'])){
+	    		return json_encode(['msg'=>'auth message not found','code'=>0]);
+	    	}
+	    	$pass=$redis->rGet($_POST['auth_name']);
+	    	if($pass==false||$_POST['auth_pass']!=$pass){
+	    		return json_encode(['msg'=>'auth undifined','code'=>0]);
+	    	}elseif($pass!=false&&$_POST['auth_pass']!=$pass)
+	    	{
+	    		$redis->rDel($_POST['auth_name']);
+	    		return json_encode(['msg'=>'auth check false','code'=>0]);
+	    	}elseif($pass!=false&&$_POST['auth_pass']==$pass){
+	    		$redis->rDel($_POST['auth_name']);
+	    		return true;
+	    	}
+	    	return json_decode(['msg'=>'auth undifined','code'=>0]);
 	    }
 	}
