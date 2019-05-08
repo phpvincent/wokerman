@@ -297,27 +297,34 @@
                 $connection->send(ws_return('ip or type not found',1));
                 return;
             }
-            $ip=$data['ip']; //用户的IP
+//            $ip=$data['ip']; //用户的IP
             global $route_connections;
-            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
-                if(count($route_connections[$ip]) <= 1){
-                    foreach ($route_connections[$ip] as $key => $connect){
-                        $connect->send(ws_return('success',0,$data));
-                    }
-                }else{
-                    foreach ($route_connections[$ip] as $key => $connect){
-                        $url = $connect->msg['route'];
-                        if($data['type'] == 0){
-                            $connect->send(ws_return('success',0,$data));
-                        }else{
-                            if(preg_match("/\/pay/", $url)){
-                                $connect->send(ws_return('success',0,$data));
-                            }
-                        }
-                    }
-                }
-
+            $send = SendGoodsCheap::server_send($data,$route_connections);
+            if($send){
+                echo 'server_send failed';
+            }else{
+                echo 'server_send success';
             }
+            return;
+//            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
+//                if(count($route_connections[$ip]) <= 1){
+//                    foreach ($route_connections[$ip] as $key => $connect){
+//                        $connect->send(ws_return('success',0,$data));
+//                    }
+//                }else{
+//                    foreach ($route_connections[$ip] as $key => $connect){
+//                        $url = $connect->msg['route'];
+//                        if($data['type'] == 0){
+//                            $connect->send(ws_return('success',0,$data));
+//                        }else{
+//                            if(preg_match("/\/pay/", $url)){
+//                                $connect->send(ws_return('success',0,$data));
+//                            }
+//                        }
+//                    }
+//                }
+
+//            }
         }
     }
     //客户端传送数据至服务端
