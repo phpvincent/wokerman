@@ -7,7 +7,7 @@
             //初始化附带信息
 	    	global $redis,$ip_array,$notice_worker;
 	    	$ip_array=[];
-            $config = ['port'=>6379,'host'=>"13.229.73.221",'auth'=>''];
+            $config = ['port'=>6379,'host'=>"127.0.0.1",'auth'=>''];
             $redis = Rediss::getInstance($config);
 //	    	$redis=new \Redis();
 //	    	$redis->connect('13.250.109.37',6379);
@@ -157,6 +157,7 @@
                     $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
                     $redis->hSet('today_time',$route_msg['route'],$url);
                 }
+                var_dump('connection left',$connection->msg);
 	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
@@ -320,6 +321,7 @@
 	    {
 	    	global $redis;
             $goods_data = $_POST;
+            if(!isset($_POST['type'])||!isset($_POST['msg'])) $con->send(ws_return('type or msg not found',-2));
 
 	    	//身份验证
 	    	$check=auth_check($redis,$goods_data);
@@ -343,20 +345,21 @@
 	 	function auth_check(\Rediss $redis,$get)
 	    {
 	    	if(!isset($_POST['auth_name'])||!isset($_POST['auth_pass'])){
-	    		return json_encode(['msg'=>'auth message not found','code'=>0]);
+	    		return ws_return('auth message not found',-1);
 	    	}
 	    	$pass=$redis->get($_POST['auth_name']);
-	    	if($pass==false||$_POST['auth_pass']!=$pass){var_dump($pass,$_POST);
-	    		return json_encode(['msg'=>'auth undifined','code'=>0]);
+	    	if($pass==false||$_POST['auth_pass']!=$pass){
+	    		var_dump($pass,$_POST);
+	    		return ws_return('auth undifined',-1);
 	    	}elseif($pass!=false&&$_POST['auth_pass']!=$pass)
 	    	{
 	    		$redis->del($_POST['auth_name']);
-	    		return json_encode(['msg'=>'auth check false','code'=>0]);
+	    		return ws_return('auth check false',-1);
 	    	}elseif($pass!=false&&$_POST['auth_pass']==$pass){
 	    		$redis->del($_POST['auth_name']);
 	    		return true;
 	    	}
 
-	    	return json_decode(['msg'=>'auth undifined','code'=>0]);
+	    	return ws_return('auth undifined',-1);
 	    }
 	}
