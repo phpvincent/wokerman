@@ -4,7 +4,7 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
-	private static $config_arr=['ip_msg'=>'ip_msg_call','event'=>'call_event'];
+	private static $config_arr=['ip_msg'=>'ip_msg_call','ip_event'=>'call_event'];
 	private static $redis;
 	private static $con;
 	public static function server_send(Array $data,$con,$redis)
