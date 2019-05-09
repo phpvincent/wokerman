@@ -157,6 +157,7 @@
                     $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
                     $redis->hSet('today_time',$route_msg['route'],$url);
                 }
+                var_dump('connection left',$connection->msg);
 	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
