@@ -1,3 +1,5 @@
 .idea/*
 public/workerman.log
 workerman.log
+public/_var_worker_public_index.php.pid
+public/_home_vagrant_wokerman_public_index.php.pid
