@@ -1,3 +1,4 @@
 .idea/*
 public/workerman.log
 workerman.log
+GatewayWorker/
