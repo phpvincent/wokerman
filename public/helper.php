@@ -1,4 +1,5 @@
 <?php
+    date_default_timezone_set('PRC');
 	if (!function_exists("route_on_start")) {
 	 	function route_on_start($woker)
 	    {
@@ -146,17 +147,20 @@
 	    		}
 
 	    		//计算页面平均在线时长
-	    		if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
-                    $today_time = $redis->hGet('today_time',$route_msg['route']);
-                    $url = json_decode($today_time,true);
-                    $url_data['count'] = $url['count'] + 1;
-                    $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
-                    $url_data['date'] = date('Y-m-d H:i:s');
-                    $redis->hSet('today_time',$route_msg['route'],json_encode($url_data));
-                }else{
-                    $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
-                    $redis->hSet('today_time',$route_msg['route'],$url);
+                if($stay_time <= 900 || $stay_time >= 2){ //访问时长不在2-900之间的数据不计算在内
+                    if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
+                        $today_time = $redis->hGet('today_time',$route_msg['route']);
+                        $url = json_decode($today_time,true);
+                        $url_data['count'] = $url['count'] + 1;
+                        $url_data['time'] = intval(($url['time'] * $url['count'] + $stay_time) / $url_data['count']);
+                        $url_data['date'] = date('Y-m-d H:i:s');
+                        $redis->hSet('today_time',$route_msg['route'],json_encode($url_data));
+                    }else{
+                        $url = json_encode(['count'=>1,'time'=>$stay_time,'date'=>date('Y-m-d H:i:s')]);
+                        $redis->hSet('today_time',$route_msg['route'],$url);
+                    }
                 }
+
                 var_dump('connection left',$connection->msg);
 	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
 	    		//删除ip——连接数租中的此连接
@@ -270,59 +274,25 @@
 	    	return ['ip'=>'','route'=>''];
 	    }
 	}
-	/*if (!function_exists("notice_onmessage")) {
-	 	function notice_onmessage($con,$data)
-	    {
-	    	var_dump($data);
-	    	$data=json_decode($data,true);
-	    	var_dump($data);
-	    	global $route_connections;
-	    	if($data['type']!=0){
-	    		foreach($route_connections[$data['ip']] as $k => $v){
-		    		$v->send($data['msg']);
-		    	}
-		    	$con->send(json_encode(['msg'=>'已向'.$data['ip'].'发送通知','status'=>0]));
-	    	}else{
-	    		//广播通知
-	    		foreach($route_connections as $k => $v){
-	    			foreach($v as $key => $val){
-	    				$val->send($data['msg']);
-	    			}
-	    		}
-	    		$con->send(json_encode(['msg'=>'已向所有用户发送通知','status'=>0]));
-	    	}
-	    }
-	}*/
-	// 子进程接收消息
+
+	// 子进程接收消息(暂时停用2019-05-09)
     if (!function_exists("notice_onmessage")) {
         function notice_onmessage($connection,$data)
         {
+            return;
             $data=json_decode($data,true);
             if(!isset($data['ip']) || !isset($data['type'])){
                 $connection->send(ws_return('ip or type not found',1));
                 return;
             }
-            $ip=$data['ip']; //用户的IP
             global $route_connections;
-            if(isset($route_connections[$ip]) && !empty($route_connections[$ip])){
-                if(count($route_connections[$ip]) <= 1){
-                    foreach ($route_connections[$ip] as $key => $connect){
-                        $connect->send(ws_return('success',0,$data));
-                    }
-                }else{
-                    foreach ($route_connections[$ip] as $key => $connect){
-                        $url = $connect->msg['route'];
-                        if($data['type'] == 0){
-                            $connect->send(ws_return('success',0,$data));
-                        }else{
-                            if(preg_match("/\/pay/", $url)){
-                                $connect->send(ws_return('success',0,$data));
-                            }
-                        }
-                    }
-                }
-
+            $send = SendGoodsCheap::server_send($data,$route_connections);
+            if($send){
+                echo 'server_send failed';
+            }else{
+                echo 'server_send success';
             }
+            return;
         }
     }
     //客户端传送数据至服务端
@@ -354,25 +324,25 @@
 	 	function http_onmessage($con,$data)
 	    {
 	    	global $redis;
-	    	//var_dump($data);
-	    	var_dump($redis);
-	    	
+            $goods_data = $_POST;
+            if(!isset($_POST['type'])||!isset($_POST['msg'])) $con->send(ws_return('type or msg not found',-2));
+
 	    	//身份验证
-	    	$check=auth_check($redis,$_POST);
+	    	$check=auth_check($redis,$goods_data);
 	    	if($check!==true)
 	    	{
 	    		$con->send($check);
 	    		return;
-	    	} 
-	    	if(!isset($_POST['type'])||!isset($_POST['msg'])) $con->send(ws_return('type or ip not found',-2));
-	    	$type=$_POST['type'];
-	    	$msg=$_POST['msg'];
-	    	$ip=isset($_POST['ip']) ? isset($_POST['ip']): null;
-	    	//推送业务
-
-
-	    	//响应请求
-	    	$con->send(ws_return('success'));
+	    	}
+	    	unset($goods_data['auth_name']);
+	    	unset($goods_data['auth_pass']);
+            global $route_connections;
+            $data = SendGoodsCheap::server_send($goods_data,$route_connections);
+            if($data){
+                $con->send(ws_return('success'));
+            }else{
+                $con->send(ws_return('fail',1));
+            }
 	    }
 	}
 	if (!function_exists("auth_check")) {

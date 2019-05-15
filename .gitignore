@@ -1,4 +1,9 @@
 .idea/*
 public/workerman.log
 workerman.log
+<<<<<<< HEAD
 GatewayWorker/
+=======
+public/_var_worker_public_index.php.pid
+public/_home_vagrant_wokerman_public_index.php.pid
+>>>>>>> 2a23e7c45a98c68d59f25c720b1eb9cdaa81c571
