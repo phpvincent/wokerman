@@ -147,7 +147,7 @@
 	    		}
 
 	    		//计算页面平均在线时长
-                if($stay_time <= 900 || $stay_time >= 2){ //访问时长不在2-900之间的数据不计算在内
+                if($stay_time <= 900 && $stay_time >= 2){ //访问时长不在2-900之间的数据不计算在内
                     if($redis->exists('today_time') && $redis->hExists('today_time',$route_msg['route'])){
                         $today_time = $redis->hGet('today_time',$route_msg['route']);
                         $url = json_decode($today_time,true);
