@@ -4,7 +4,7 @@ require_once './helper.php';
 	 * 服务端通讯
 	 */
 class ServerCall{
-	private static $config_arr=['ip_msg'=>'ip_msg_call','ip_event'=>'call_event'];
+	private static $config_arr=['ip_msg'=>'ip_msg_call','ip_event'=>'call_event','ip_notice'=>'call_server','ip_data'=>'call_data'];
 	private static $redis;
 	private static $con;
 	public static function server_send(Array $data,$con,$redis)
@@ -35,7 +35,7 @@ class ServerCall{
 	 * @param  [type] $data [客户端通讯数据]
 	 * @return [type]       [description]
 	 */
-	private static function ip_msg_call($data)
+	private static function ip_msg_call($data,$con=null)
 	{
 		$redis=self::$redis;
 		$connection=self::$con;
@@ -49,9 +49,9 @@ class ServerCall{
 			$ip_info['ip_msg']=$data['ip_msg'];
 			$redis->hSet('route_ip_msg',$connection->msg['ip'],json_encode($ip_info));
 			if(isset($connection->msg['route'])){
-			self::call_data(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time())]));
+			self::call_data(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'route'=>$connection->msg['route'],'time'=>date("Y-m-d H:i:s",time())]),$con);
 			}else{
-				self::call_data(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'time'=>date("Y-m-d H:i:s",time())]));
+				self::call_data(call_arr(['msg'=>'输入联系方式','ip'=>$connection->msg['ip'],'ip_msg'=>$data['ip_msg'],'time'=>date("Y-m-d H:i:s",time())]),$con);
 			}
 			$connection->send(ws_return('ip_msg save success',0));
 		    return true;
@@ -64,9 +64,13 @@ class ServerCall{
 	 * @param  [string] $route [路由]
 	 * @return [type]        [description]
 	 */
-	public static function call_server($msg)
+	public static function call_server($msg,$con=null)
 	    {	
 	    	$type=0;
+	    	if(is_string($msg)) $msg=json_encode($msg,true);
+	    	//$msg=json_encode($msg);
+	    	$msg['ip']=$con->getRemoteIp();
+	    	$msg=json_encode($msg);
 	    	var_dump($msg);
 	    	global $notice_worker;
 	    	foreach($notice_worker->connections as $k => $con)
@@ -81,9 +85,13 @@ class ServerCall{
 	 * @param  [type] $route [description]
 	 * @return [type]        [description]
 	 */
-	public static function call_event($msg)
+	public static function call_event($msg,$con=null)
 	{		
 			$type=1;
+			if(is_string($msg)) $msg=json_encode($msg,true);
+			//$msg=json_encode($msg);
+			$msg['ip']=$con->getRemoteIp();
+			$msg=json_encode($msg);
 			var_dump($msg);
 			global $notice_worker;
 	   	 	foreach($notice_worker->connections as $k => $con)
@@ -94,9 +102,13 @@ class ServerCall{
 	/**
 	 * 数据捉取
 	 */
-	public static function call_data($msg)
+	public static function call_data($msg,$con=null)
 	{		
 			$type=2;
+			if(is_string($msg)) $msg=json_encode($msg,true);
+			//$msg=json_encode($msg);
+			$msg['ip']=$con->getRemoteIp();
+			$msg=json_encode($msg);
 			var_dump($msg);
 			global $notice_worker;
 	   	 	foreach($notice_worker->connections as $k => $con)
