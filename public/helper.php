@@ -174,7 +174,7 @@
 	    		//当前ip下还有其它进程在连接，停止删除数据
 	    			$ip_array[$ip]['num']-=1;
 	    			return;
-	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1){
+	    	}elseif(isset($ip_array[$ip])&&$ip_array[$ip]['num']<=1&&isset($ip_array[$ip]['route'])&&$ip_array[$ip]['route']!=null){
 	    		var_dump('all_ip left.',$ip_array[$ip]);
 	    		foreach ($ip_array[$ip]['route'] as $key => $value) {
 	    			try{
