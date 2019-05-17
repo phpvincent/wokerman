@@ -70,7 +70,7 @@ class ServerCall{
 	    	if(is_string($msg)) $msg=json_encode($msg,true);
 	    	//$msg=json_encode($msg);
 	    	$msg['ip']=$con->getRemoteIp();
-	    	$msg=json_encode($msg);
+//	    	$msg=json_encode($msg);
 	    	var_dump($msg);
 	    	global $notice_worker;
 	    	foreach($notice_worker->connections as $k => $con)
