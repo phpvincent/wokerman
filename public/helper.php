@@ -40,7 +40,7 @@
 	        }else{
 	        	$ip_array[$ip]['num']+=1;
 	        }
-	        ServerCall::call_server(call_arr(['msg'=>'路由访问','ip'=>$ip]));
+	        ServerCall::call_server(call_arr(['msg'=>'路由访问','ip'=>$ip]),$connection);
 	        echo 'ip:'.$ip."/n";
 	    }
 	}
@@ -89,7 +89,7 @@
 	    	}
 	        $route=$data['route'];
 	        $connection->msg['route']=$route;
-	        ServerCall::call_server(call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]));
+	        ServerCall::call_server(call_arr(['msg'=>'访问页面','ip'=>$connection->msg['ip'],'route'=>$route]),$connection);
 	        if(isset($ip_array[$connection->msg['ip']]['route'])){
 	        	//处理一个IP访问多个页面
 	        	if(!in_array($route,$ip_array[$connection->msg['ip']]['route'])){
@@ -162,7 +162,7 @@
                 }
 
                 var_dump('connection left',$connection->msg);
-	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]));
+	    		ServerCall::call_server(call_arr(['msg'=>'离开页面','ip'=>$ip,'route'=>$route_msg['route'],'stay_time'=>$stay_time]),$connection);
 	    		//删除ip——连接数租中的此连接
 		    	$route_num=$redis->hGet('routes',$route_msg['route']);
 			    	if($route_num<=0){
